@@ -1,0 +1,19 @@
+{
+      "School":[
+            {
+                  "SchoolName":"VHSS",
+                  "principal":"mr.Ganesan",
+                  "students":[
+                        {
+                             "student":[
+                                   {
+                                    "rollno":4,
+                                    "name": "Dinesh",
+                                    "rank":2
+                                   }
+                              ]
+                        }
+                  ]
+            }
+      ]
+}

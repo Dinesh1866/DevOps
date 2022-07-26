@@ -1,0 +1,10 @@
+<? xml version ="1.0" encoding="UTF-8"?>
+<school name="SRM" principal="Ganesan">
+ <students>
+  <student>
+   <rno>4</rno>
+   <name>"Dinesh"</name>
+   <rank>2</rank>
+  </student>
+ </students>
+</school>

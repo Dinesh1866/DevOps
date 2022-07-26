@@ -1,0 +1,123 @@
+# Sequence DataType
+student: !!seq
+ - marks
+ - roll_number
+ - name
+ - address
+---
+ # OR we can also write them as 
+ student: [marks, roll_number, name, address]
+
+ # Sparse seq:
+ sparse seq :
+  - hey
+  - how
+  -
+  - null
+  - what
+---
+
+# Nested Sequence
+shopping: 
+ - bread
+ - egg
+ - oil
+ - fruits
+  - apple
+  - banana
+  - orange
+ - choclates
+#here fruits are nested seq
+---
+
+# Maps - key value pairs are called map
+# !!map
+name : Dinesh
+---
+
+# Nested Mapping : map within a map
+name: Dinesh
+information :
+ age : 22
+ job : DevOps Engineer
+ phone : 1234567890
+add : Tamil Nadu #this is eg of Nested mapping
+---
+
+# the above can also be written as
+name : Dinesh
+information : {age: 22, job: DevOps Engineer, Phone: 1234567890}
+add : Tamil Nadu
+---
+
+# Pairs
+# !!pairs
+pair example : !!pairs
+ - job : DevOps Engineer
+ - job : Cloud Engineer
+ - job : intern at Google
+---
+
+#can also write them as
+pair example: !!pairs [job : DevOps Engineer, job : Cloud Engineer, job : intern at Google]
+
+#note : if we use {} here it will only show the first value and leave others
+# if we use [] - this will show our whole list of key and values
+
+# Sets - this will let us have unique values.
+names : !!set
+ ? Radha
+ ? Subramanian
+ ? Sanjay
+ ? Dinesh
+
+---
+...
+# Dictionaries - !!omap
+people : !!omap
+ - Dinesh :
+    name : Dinesh
+    age : 22
+    height : 5.5
+ - Javid :
+    name : Javid
+    age : 22
+    height : 5.6
+#here unlike nested map here we even map a nested map to a map
+
+---
+#(or)
+people :
+ Dinesh :
+  - name : Dinesh
+  - age : 22
+  - height : 5.5
+ Javid :
+  - name : Javid
+  - age : 22
+  - height : 5.6
+
+---
+# Reusing some properties with anchors
+likings: &base
+ fav actor : Vijay
+ fav actress : Nayan
+
+person 1 :
+ name : Dinesh
+ <<: *base
+---
+# we can also overwrite thoese by giving diff value to existing one
+likings: &likes
+ fav actor : Vijay
+ fav actress : Nayan
+
+person 1 :
+ name : Jey
+ <<: *likes
+ fav actor : Ajith
+
+person 2 :
+ name : Dinesh
+ <<: *likes
+---

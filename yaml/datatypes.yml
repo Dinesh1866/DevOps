@@ -1,0 +1,64 @@
+#in YAML also we have strings, float, variables etc it differs how we write them
+
+#for variables. we store them in 3 diff types
+name : "Dineshkumar"
+---
+name : Sanjay
+---
+name : 'Sanajy'
+---
+#these were all key value pairs.
+
+#to store values in multiple lines we use.
+bio: |
+hey there! this is Dinesh.
+and this how i would like to introduce myself.
+---
+
+#to store everything in single line we use 
+bio : >
+hey there this is Dinesh
+and this is what i have thought to say.
+---
+
+#the above one is same as this one 
+bio : hey there this is Dinesh and this is what i have thought to say.
+
+
+number : 11711395 #integer
+gpa : 6.19 #float
+booleanValue : No #boolean
+boolean : Yes
+#here for boolean False we can use : No,no, N, n, False, false etc 
+#and for boolean true we can use : Yes, yes, Y, y, True, true  
+---
+
+# Specify the type
+Zero : !!int 0
+negativeNum : !!int -90
+positiveNum : !!int 18
+binaryNum : !!int 0b11001
+octalNum : !!int 06102004
+hexa : !!int 0x29
+commaValue : !!int +130_000 #130,000
+exponential numbers : 6.543E21
+
+#floating point numbers
+percent : !!float 61.90
+infinite: !!float .inf
+not a num : !!float .nan #or
+---
+not a num : .nan
+
+#for boolean
+booleanValue : !!bool false
+
+#for string 
+sentence : !!str hey there this is dinesh!
+
+#null
+surname: !!null Null #or null NULL or ~
+~ : this is a null key
+
+#data and time 
+date : !!timestamp 2022-05-06

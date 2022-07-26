@@ -1,0 +1,30 @@
+#can use .yaml or .yml as file extension
+
+#this is how we write in yaml for commands 
+
+#key value pairs
+apple : "I'm a red fruit"
+11711395 : "my reg number"
+---
+
+#list
+- apple 
+- banana
+---
+
+#box type
+fruits:
+ - apple
+ - banana
+ - mango
+#this is box type here we link a key to an list
+...
+
+# --- to seperate one document or object from another
+# ... to show thats the end of the file.
+
+#we can also store multiple data in single line
+cities : [chennai, bangalore, mumbai, delhi] #for lists
+---
+{banana : "rich in vitamin k", age: "22"} #for key value pairs 
+#if we found indentation is tough we can use this.
