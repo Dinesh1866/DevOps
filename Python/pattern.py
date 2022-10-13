@@ -52,15 +52,17 @@ for i in range(1,6):
       for j in range(i,0,-1):
             print(j,end="")
       print()
+'''
 
 
 #v pattern
 '''
-1        1
+'''1        1
 12      21
 123    321
 1234  4321
 1234554321'''
+'''
 #ch = input()
 pattern = 8
 for i in range(1,6):
@@ -71,4 +73,10 @@ for i in range(1,6):
       pattern -=2
       for j in range(i,0,-1):
             print(j,end="")
-      print()
+      print()'''
+
+
+
+'''c = input().split(".")
+print(c)'''
+

@@ -1,0 +1,16 @@
+h1{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      border-color: burlywood;
+      border-style: dotted;
+      border-width: 3px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      border-radius: 50px;
+      padding-bottom: 50px;
+      margin-top: 150px;
+      margin-left: 500px;
+      margin-right: 500px;
+      margin-bottom: 150px;
+      background-color: thistle;
+}
