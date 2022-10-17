@@ -29,8 +29,10 @@ console.log(a > 5 && b > 5);
 console.log(a > 5 || b > 5);
 console.log(!(a > 5 && b > 5));
 
+
 //ternary operator
 console.log(a > 5 ? "a is greater than 5" : "a is less than 5");
+
 
 //assignment operators
 console.log(a += b);
@@ -38,3 +40,11 @@ console.log(a -= b);
 console.log(a *= b);
 console.log(a /= b);
 console.log(a %= b);
+
+
+//NaN and isNaN
+//NaN - Not a Number
+//isNaN - is Not a Number - returns true if the value is NaN
+var c = "Hello";
+console.log(c/b);
+console.log(isNaN(c/b));
