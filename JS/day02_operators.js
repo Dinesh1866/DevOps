@@ -16,13 +16,13 @@ console.log(a);
 
 
 //comparison operators
-console.log(a == b);
+console.log(a == b); //will check only the values are euqal or not eg: 1 and True -> true
 console.log(a != b);
 console.log(a > b);
 console.log(a < b);
 console.log(a >= b);
 console.log(a <= b);
-
+console.log(a === b); //will check the values and the data types are equal or not eg: 1 and True -> false
 
 //logical operators
 console.log(a > 5 && b > 5);
