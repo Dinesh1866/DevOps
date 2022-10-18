@@ -1,5 +1,5 @@
 //conditional Statements
-
+//Decision making statements
 
 //if
 var a = 10;
@@ -33,7 +33,7 @@ else {
       console.log("a and b are equal");
       }
 
-      
+
 //switch
 var a = 10;
 switch (a) {
