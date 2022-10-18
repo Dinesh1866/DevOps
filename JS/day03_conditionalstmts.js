@@ -1,5 +1,5 @@
 //conditional Statements
-//Decision making statements
+//Decision making statements are used to decide the flow of execution of the program.
 
 //if
 var a = 10;
