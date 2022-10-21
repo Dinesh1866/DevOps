@@ -2,7 +2,7 @@
 This Repository will get updated over time with DevOps study Materials and my sandbox little projects 
 
 ## Notes
-- [Python](Python/README.md)
+- [Python](https://github.com/Dinesh1866/DevOps/tree/main/Python#readme)
 - [HTML](HTML/README.md)
 - [CSS](CSS/README.md)
 - [JavaScript](JS/README.md)
