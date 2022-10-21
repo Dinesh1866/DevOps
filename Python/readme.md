@@ -1,7 +1,7 @@
 <div align=center>
-<h1>PYTHON</h1> </div>
+<h1><img src="https://img.icons8.com/fluency/30/000000/python.png"/> PYTHON</h1> </div>
 
-      Python is a High level, Object Oriented Dynamically typed and Interpreted Programming  and Scripting Language. It is a general purpose programming language and is used for a wide variety of applications like Web Development, Data Science, Machine Learning, Artificial Intelligence, etc.
+Python is a High level, Object Oriented Dynamically typed and Interpreted Programming  and Scripting Language. It is a general purpose programming language and is used for a wide variety of applications like Web Development, Data Science, Machine Learning, Artificial Intelligence, etc.
 
 > Dynamic Typing: In Python, we don't need to declare the type of the variable. The type of the variable is determined at runtime.
 
