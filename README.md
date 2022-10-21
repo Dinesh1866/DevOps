@@ -2,14 +2,14 @@
 This Repository will get updated over time with DevOps study Materials and my sandbox little projects 
 
 ## Notes
-- [Python](https://github.com/Dinesh1866/DevOps/tree/main/Python#readme)
+- [Python](https://github.com/Dinesh1866/DevOps/blob/main/Python/readme.md)
 - [HTML](HTML/README.md)
 - [CSS](CSS/README.md)
 - [JavaScript](JS/README.md)
 - [Git](Git/README.md)
 - [Linux](Linux/README.md)
 - [Azure](Azure/README.md)
-- [Docker](Docker/README.md)
+- [Docker](https://github.com/Dinesh1866/DevOps/blob/main/Docker/readme.md)
 - [Kubernetes](Kubernetes/README.md)
 - [Ansible](Ansible/README.md)
 - [Terraform](Terraform/README.md)
