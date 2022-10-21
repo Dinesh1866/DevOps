@@ -113,4 +113,3 @@ print(type(a)) # o/p: <class 'str'>
 <br>
 
 ## Operators
-
