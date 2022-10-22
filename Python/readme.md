@@ -208,11 +208,11 @@ print(a * 3) # o/p: HelloHelloHello
 
 > !=: It is used to check if two values are not equal or not. It returns a boolean value.
 
-> >: It is used to check if the first value is greater than the second value or not. It returns a boolean value.
+> (>): It is used to check if the first value is greater than the second value or not. It returns a boolean value.
 
 > <: It is used to check if the first value is less than the second value or not. It returns a boolean value.
 
-> >=: It is used to check if the first value is greater than or equal to the second value or not. It returns a boolean value.
+> (>=): It is used to check if the first value is greater than or equal to the second value or not. It returns a boolean value.
 
 > <=: It is used to check if the first value is less than or equal to the second value or not. It returns a boolean value.
 
@@ -566,3 +566,230 @@ print(b not in c) # o/p: False
 
 ## Conditional Statements
 Python has 3 types of conditional statements:
+
+1. if
+2. if-else
+3. if-elif-else
+4. nested if
+5. nested if-else
+6. nested if-elif-else
+7. switch-case
+
+### if
+> if: It is used to check if the given condition is true or not. If the condition is true, then it executes the statements inside the if block.
+
+```python
+# if
+a = 10
+b = 20
+
+if a < b:
+    print("a is less than b")
+```
+
+### if-else
+> if-else: It is used to check if the given condition is true or not. If the condition is true, then it executes the statements inside the if block. If the condition is false, then it executes the statements inside the else block.
+
+```python
+# if-else
+a = 10
+b = 20
+
+if a < b:
+    print("a is less than b")
+else:
+    print("a is greater than b")
+```
+
+### if-elif-else
+> if-elif-else: It is used to check if the given condition is true or not. If the condition is true, then it executes the statements inside the if block. If the condition is false, then it checks the next condition. If the next condition is true, then it executes the statements inside the elif block. If the next condition is false, then it executes the statements inside the else block.
+
+```python
+# if-elif-else
+a = 10
+b = 20
+
+if a < b:
+    print("a is less than b")
+elif a > b:
+    print("a is greater than b")
+else:
+    print("a is equal to b")
+```
+
+### nested if
+> nested if: It is used to check if the given condition is true or not. If the condition is true, then it executes the statements inside the if block. If the condition is false, then it executes the statements inside the else block.
+
+```python
+# nested if
+a = 10
+b = 20
+
+if a < b:
+    if a == 10:
+        print("a is less than b and a is equal to 10")
+    else:
+        print("a is less than b and a is not equal to 10")
+else:
+    print("a is greater than b")
+```
+
+### nested if-else
+> nested if-else: It is used to check if the given condition is true or not. If the condition is true, then it executes the statements inside the if block. If the condition is false, then it executes the statements inside the else block.
+
+```python
+# nested if-else
+a = 10
+b = 20
+
+if a < b:
+    if a == 10:
+        print("a is less than b and a is equal to 10")
+    else:
+        print("a is less than b and a is not equal to 10")
+else:
+    if a == 10:
+        print("a is greater than b and a is equal to 10")
+    else:
+        print("a is greater than b and a is not equal to 10")
+```
+
+### match-case
+
+> match-case: It is used to check if the given condition is true or not. If the condition is true, then it executes the statements inside the if block. If the condition is false, then it executes the statements inside the else block.
+
+```python
+# match-case
+a = 10
+
+match a:
+    case 10:
+        print("a is equal to 10")
+    case 20:
+        print("a is equal to 20")
+    case 30:
+        print("a is equal to 30")
+    case _:
+        print("a is not equal to 10, 20 or 30")
+```
+
+<br>
+
+## Loops
+Python has 3 types of loops:
+
+1. for
+2. while
+3. nested
+      - nested for
+      - nested while
+      - nested for-while
+      - nested while-for
+
+### for
+> for: It is used to iterate over a sequence (list, tuple, string) or other iterable objects.
+
+```python
+# for
+a = [10, 20, 30, 40, 50]
+
+for i in a:
+    print(i)
+```
+
+### while
+> while: It is used to iterate over a block of code as long as the test expression (condition) is true.
+
+```python
+# while
+a = 0
+
+while a < 5:
+    print(a)
+    a += 1
+```
+
+### nested
+> nested: It is used to iterate over a block of code as long as the test expression (condition) is true.
+
+```python
+# nested
+a = 0
+
+while a < 5:
+    print(a)
+    a += 1
+
+    for i in range(5):
+        print(i)
+```
+
+<br>
+
+## Collections
+Python has 4 types of collections:
+
+1. list
+2. tuple
+3. set
+4. dictionary
+
+### list
+> list: It is a collection which is ordered and changeable. Allows duplicate members.
+
+```python
+# list
+a = [10, 20, 30, 40, 50]
+print(a)
+
+a = [10, 20, 30, 40, 50, 10, "python", 3.14]
+print(a)
+```
+
+### tuple
+> tuple: It is a collection which is ordered and unchangeable. Allows duplicate members.
+
+```python
+# tuple
+a = (10, 20, 30, 40, 50)
+print(a)
+
+a = (10, 20, 30, 40, 50, 10, "python", 3.14)
+print(a)
+```
+
+### set
+> set: It is a collection which is unordered and unindexed. No duplicate members.
+
+```python
+# set
+a = {10, 20, 30, 40, 50}
+print(a)
+
+a = {10, 20, 30, 40, 50, 10, "python", 3.14}
+print(a)
+```
+
+### dictionary
+> dictionary: It is a collection which is unordered, changeable and indexed. No duplicate members.
+
+```python
+# dictionary
+a = {
+    "name": "python",
+    "version": 3.9
+}
+print(a)
+
+a = {
+    "name": "python",
+    "version": 3.9,
+    "name": "python",
+    "version": 3.9
+}
+print(a)
+```
+
+<br>
+
+## Functions
