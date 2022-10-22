@@ -14,10 +14,10 @@ Python is a High level, Object Oriented Dynamically typed and Interpreted Progra
 <br>
 
 ## Table of Contents
-- variables
-- data types
-- operators
-- conditional statements (if-else, switch-case)
+- [variables](#variables)
+- [data types](#data-types)
+- [operators](#operators)
+- [conditional statements](#conditional-statements) (if-else, switch-case)
 - loops (for, while)
 - iterators
 - Collections (List, Tuple, Set, Dictionary)
@@ -204,12 +204,81 @@ print(a * 3) # o/p: HelloHelloHello
 | >= | Greater than or equal to | a >= b |
 | <= | Less than or equal to | a <= b |
 
+> ==: It is used to check if two values are equal or not. It returns a boolean value.
+
+> !=: It is used to check if two values are not equal or not. It returns a boolean value.
+
+> >: It is used to check if the first value is greater than the second value or not. It returns a boolean value.
+
+> <: It is used to check if the first value is less than the second value or not. It returns a boolean value.
+
+> >=: It is used to check if the first value is greater than or equal to the second value or not. It returns a boolean value.
+
+> <=: It is used to check if the first value is less than or equal to the second value or not. It returns a boolean value.
+
+```python
+# equal to
+a = 10
+b = 20
+print(a == b) # o/p: False
+
+# not equal to
+a = 10
+b = 20
+print(a != b) # o/p: True
+
+# greater than
+a = 10
+b = 20
+print(a > b) # o/p: False
+
+# less than
+a = 10
+b = 20
+print(a < b) # o/p: True
+
+# greater than or equal to
+a = 10
+b = 20
+print(a >= b) # o/p: False
+
+# less than or equal to
+a = 10
+b = 20
+print(a <= b) # o/p: True
+```
+
+
 ### Logical Operators
 | Operator | Description | Example |
 | --- | --- | --- |
 | and | Returns True if both statements are true | a and b |
 | or | Returns True if one of the statements is true | a or b |
 | not | Reverse the result, returns False if the result is true | not(a and b) |
+
+> and: It is used to check if both the statements are true or not. It returns a boolean value.
+
+> or: It is used to check if one of the statements is true or not. It returns a boolean value.
+
+> not: It is used to reverse the result. It returns a boolean value.
+
+```python
+# and
+a = 10
+b = 20
+print(a == 10 and b == 20) # o/p: True
+
+# or
+a = 10
+b = 20
+print(a == 10 or b == 20) # o/p: True
+
+# not
+a = 10
+b = 20
+print(not(a == 10 and b == 20)) # o/p: False
+```
+
 
 ### Bitwise Operators
 | Operator | Description | Example |
@@ -220,6 +289,48 @@ print(a * 3) # o/p: HelloHelloHello
 | ~ | NOT | ~a |
 | << | Zero fill left shift | a << 2 |
 | >> | Signed right shift | a >> 2 |
+
+> &: It is used to perform bitwise AND operation. It returns an int value.
+
+> |: It is used to perform bitwise OR operation. It returns an int value.
+
+> ^: It is used to perform bitwise XOR operation. It returns an int value.
+
+> ~: It is used to perform bitwise NOT operation. It returns an int value.
+
+> <<: It is used to perform bitwise left shift operation. It returns an int value.
+
+> >>: It is used to perform bitwise right shift operation. It returns an int value.
+
+```python
+# bitwise AND
+a = 10
+b = 20
+print(a & b) # o/p: 0
+
+# bitwise OR
+a = 10
+b = 20
+print(a | b) # o/p: 30
+
+# bitwise XOR
+a = 10
+b = 20
+print(a ^ b) # o/p: 30
+
+# bitwise NOT
+a = 10
+print(~a) # o/p: -11
+
+# bitwise left shift
+a = 10
+print(a << 2) # o/p: 40
+
+# bitwise right shift
+a = 10
+print(a >> 2) # o/p: 2
+```
+
 
 ### Assignment Operators
 | Operator | Description | Example |
@@ -238,17 +349,218 @@ print(a * 3) # o/p: HelloHelloHello
 | >>= | Bitwise right shift | c >>= a is equivalent to c = c >> a |
 | <<= | Bitwise left shift | c <<= a is equivalent to c = c << a |
 
+> =: It is used to assign values from right side operands to left side operand.
+
+> +=: It is used to add AND. It is equivalent to c = c + a.
+
+> -=: It is used to subtract AND. It is equivalent to c = c - a.
+
+> \*=: It is used to multiply AND. It is equivalent to c = c * a.
+
+> /=: It is used to divide AND. It is equivalent to c = c / a.
+
+> %=: It is used to modulus AND. It is equivalent to c = c % a.
+
+> //=: It is used to floor division AND. It is equivalent to c = c // a.
+
+> \*\*=: It is used to exponent AND. It is equivalent to c = c \*\* a.
+
+> &=: It is used to bitwise AND. It is equivalent to c = c & a.
+
+> \|=: It is used to bitwise OR. It is equivalent to c = c \| a.
+
+> ^=: It is used to bitwise XOR. It is equivalent to c = c ^ a.
+
+> >>=: It is used to bitwise right shift. It is equivalent to c = c >> a.
+
+> <<=: It is used to bitwise left shift. It is equivalent to c = c << a.
+
+```python
+# assignment
+a = 10
+b = 20
+c = a + b
+print(c) # o/p: 30
+
+# add AND
+a = 10
+b = 20
+c = 0
+
+c += a
+print(c) # o/p: 10
+
+c += b
+print(c) # o/p: 30
+
+# subtract AND
+a = 10
+b = 20
+c = 0
+
+c -= a
+print(c) # o/p: -10
+
+c -= b
+print(c) # o/p: -30
+
+# multiply AND
+a = 10
+b = 20
+c = 0
+
+c *= a
+print(c) # o/p: 0
+
+c *= b
+print(c) # o/p: 0
+
+# divide AND
+a = 10
+b = 20
+c = 0
+
+c /= a
+print(c) # o/p: 0.0
+
+c /= b
+print(c) # o/p: 0.0
+
+# modulus AND
+a = 10
+b = 20
+c = 0
+
+c %= a
+print(c) # o/p: 0
+
+c %= b
+print(c) # o/p: 0
+
+# floor division AND
+a = 10
+b = 20
+c = 0
+
+c //= a
+print(c) # o/p: 0
+
+c //= b
+print(c) # o/p: 0
+
+# exponent AND
+a = 10
+b = 20
+c = 0
+
+c **= a
+print(c) # o/p: 0
+
+c **= b
+print(c) # o/p: 0
+
+# bitwise AND
+a = 10
+b = 20
+c = 0
+
+c &= a
+print(c) # o/p: 0
+
+c &= b
+print(c) # o/p: 0
+
+# bitwise OR
+a = 10
+b = 20
+c = 0
+
+c |= a
+print(c) # o/p: 10
+
+c |= b
+print(c) # o/p: 30
+
+# bitwise XOR
+a = 10
+b = 20
+c = 0
+
+c ^= a
+print(c) # o/p: 10
+
+c ^= b
+print(c) # o/p: 30
+
+# bitwise right shift
+a = 10
+b = 20
+c = 0
+
+c >>= a
+print(c) # o/p: 0
+
+c >>= b
+print(c) # o/p: 0
+
+# bitwise left shift
+a = 10
+b = 20
+c = 0
+
+c <<= a
+print(c) # o/p: 0
+
+c <<= b
+print(c) # o/p: 0
+```
+
+
 ### Identity Operators
 | Operator | Description | Example |
 | --- | --- | --- |
 | is | Returns True if both variables are the same object | a is b |
 | is not | Returns True if both variables are not the same object | a is not b |
 
+> is: It is used to check if both variables are the same object.
+
+> is not: It is used to check if both variables are not the same object.
+
+```python
+# identity
+a = 10
+b = 20
+c = a
+
+print(a is b) # o/p: False
+print(a is c) # o/p: True
+
+print(a is not b) # o/p: True
+print(a is not c) # o/p: False
+```
+
 ### Membership Operators
 | Operator | Description | Example |
 | --- | --- | --- |
 | in | Returns True if a sequence with the specified value is present in the object | x in y |
 | not in | Returns True if a sequence with the specified value is not present in the object | x not in y |
+
+> in: It is used to check if a sequence with the specified value is present in the object.
+
+> not in: It is used to check if a sequence with the specified value is not present in the object.
+
+```python
+# membership
+a = 10
+b = 20
+c = [10, 20, 30, 40, 50]
+
+print(a in c) # o/p: True
+print(b in c) # o/p: True
+
+print(a not in c) # o/p: False
+print(b not in c) # o/p: False
+```
 
 <br>
 
