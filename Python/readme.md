@@ -792,4 +792,144 @@ print(a)
 
 <br>
 
+## Collections Methods
+
+### list
+
+#### 1. append
+> append: It is used to add an item to the end of the list.
+
+```python
+# append
+a = [10, 20, 30, 40, 50]
+print(a)
+
+a.append(60)
+print(a) # [10, 20, 30, 40, 50, 60]
+```
+
+#### 2. clear
+> clear: It is used to remove all items from the list.
+
+```python
+# clear
+a = [10, 20, 30, 40, 50]
+print(a)
+
+a.clear()
+print(a) # []
+```
+
+#### 3. copy
+> copy: It is used to return a copy of the list.
+
+```python
+# copy
+a = [10, 20, 30, 40, 50]
+print(a)
+
+b = a.copy()
+print(b) # [10, 20, 30, 40, 50]
+```
+
+#### 4. count
+> count: It is used to return the number of times the value appears in the list.
+
+```python
+# count
+a = [10, 20, 30, 40, 50, 10, 20, 30, 40]
+print(a)
+
+print(a.count(10)) # 2
+print(a.count(50)) # 1
+```
+
+#### 5. extend
+> extend: It is used to add the elements of a list (or any iterable), to the end of the current list.
+
+```python
+# extend
+a = [10, 20, 30, 40, 50]
+print(a)
+
+a.extend([60, 70, 80, 90, 100])
+print(a) # [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+```
+
+#### 6. index
+> index: It is used to return the index of the first element with the specified value.
+
+```python
+# index
+a = [10, 20, 30, 40, 50, 10, 20, 30, 40]
+print(a)
+
+print(a.index(10)) # 0
+print(a.index(50)) # 4
+```
+
+#### 7. insert
+> insert: It is used to add an item at the specified index.
+
+```python
+# insert
+a = [10, 20, 30, 40, 50]
+print(a)
+
+a.insert(2, 60)
+print(a) # [10, 20, 60, 30, 40, 50]
+```
+
+#### 8. pop
+> pop: It is used to remove the item at the specified index.
+
+```python
+# pop
+a = [10, 20, 30, 40, 50]
+print(a)
+
+a.pop(2)
+print(a) # [10, 20, 40, 50]
+```
+
+#### 9. remove
+> remove: It is used to remove the first item with the specified value.
+
+```python
+# remove
+a = [10, 20, 30, 40, 50, 10, 20, 30, 40]
+print(a)
+
+a.remove(10)
+print(a) # [20, 30, 40, 50, 10, 20, 30, 40]
+```
+
+#### 10. reverse
+> reverse: It is used to reverse the order of the list.
+
+```python
+# reverse
+a = [10, 20, 30, 40, 50]
+print(a)
+
+a.reverse()
+print(a) # [50, 40, 30, 20, 10]
+```
+
+#### 11. sort
+> sort: It is used to sort the list.
+
+```python
+# sort
+a = [10, 20, 30, 40, 50]
+print(a)
+
+a.sort()
+print(a) # [10, 20, 30, 40, 50]
+```
+
+### tuple
+
+
+
 ## Functions
