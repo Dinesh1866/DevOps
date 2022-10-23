@@ -930,6 +930,16 @@ print(a) # [10, 20, 30, 40, 50]
 
 ### tuple
 
+#### 1. count
+> count: It is used to return the number of times the value appears in the tuple.
 
+```python
+# count
+a = (10, 20, 30, 40, 50, 10, 20, 30, 40)
+print(a)
+
+print(a.count(10)) # 2
+print(a.count(50)) # 1
+```
 
 ## Functions
