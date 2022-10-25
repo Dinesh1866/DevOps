@@ -956,6 +956,19 @@ print(a.index(10)) # 0
 print(a.index(50)) # 4
 ```
 
+### set
+
+#### 1. add
+> add: It is used to add an element to the set.
+
+```python
+# add
+a = {10, 20, 30, 40, 50}
+print(a)
+
+a.add(60)
+print(a) # {40, 10, 50, 20, 60, 30}
+```
 
 
 
