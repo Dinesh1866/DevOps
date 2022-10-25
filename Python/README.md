@@ -943,6 +943,21 @@ print(a.count(50)) # 1
 ```
 
 
+#### 2. index
+
+> index: It is used to return the index of the first element with the specified value.
+
+```python
+# index
+a = (10, 20, 30, 40, 50, 10, 20, 30, 40)
+print(a)
+
+print(a.index(10)) # 0
+print(a.index(50)) # 4
+```
+
+
+
 
 
 ## Functions
