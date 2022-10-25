@@ -1,0 +1,13 @@
+school :
+ - name : SRM
+   principal: Somename
+   Students:
+    student:
+    rollno: 4
+    name: Dinesh
+    Rank : 2
+   Student02 :
+    student:
+    rollno: 3
+    name : Kan
+    Rank : 1

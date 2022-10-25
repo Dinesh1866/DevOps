@@ -1,0 +1,29 @@
+YAML - Yet Another Markup Language -> thats how its called before 
+but now 
+YAML - called YAML ain't a Markup Language
+
+and its all because now its not like other markup languages like only to handle documents.
+
+but here now in yaml we can also store objects and data.
+and can also represent the complex data in a easy way.
+
+and this is how represent data in yaml -> intro.yaml
+impt: YAML is case sensitive.
+
+and we also have websites to check the syntax and convert the YAML into JSON file.
+yamllint.com
+onlineyamltools.com
+
+to seperate the documents we use three dashes ->  ---
+to end the documents we use three dots -> ...
+
+and yaml don't allow us to write data in diff lines for comments or anything.
+so here we use '|' before so we can store value in multiple lines.
+
+and to store the diff line values in one line we use '>'
+
+and to know the datatypes and how to write them,
+where we use can refer datatypes.yml
+
+and for some advanced topics can refer the advancedDataType.yml
+

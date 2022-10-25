@@ -1,0 +1,8 @@
+FROM fedora:latest
+RUN yum install -y figlet
+#CMD exec figlet -f banner "How you Doing today?"
+
+#now what i want is to give my own command and it should print it
+ENTRYPOINT [ "figlet","-f","slant"]
+#now this command will be execeuted if we give no I/P
+CMD ["Hello from Docker!"]
