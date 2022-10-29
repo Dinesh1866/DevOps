@@ -943,3 +943,52 @@ print(a.count(50)) # 1
 ```
 
 ## Functions
+
+Functions are block of code that is used to perform certain actions, and they are also known as methods.
+
+### 1. def
+
+> def: It is used to define a function.
+
+```python
+# def
+def hello():
+    print("Hello World")
+
+hello()
+```
+
+### 2. return
+
+> return: It is used to return a value from a function.
+
+```python
+# return
+def hello():
+    return "Hello World"
+
+print(hello())
+```
+
+### 3. pass
+
+> pass: It is used to define a function with no content.
+
+```python
+# pass
+def hello():
+    pass
+
+hello()
+```
+
+### 4. lambda
+
+> lambda: It is used to create a small anonymous function.
+
+```python
+# lambda
+x = lambda a, b: a + b
+print(x(5, 6))
+```
+
