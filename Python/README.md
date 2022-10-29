@@ -992,3 +992,17 @@ x = lambda a, b: a + b
 print(x(5, 6))
 ```
 
+### 5. yield
+
+> yield: It is used to return a generator.
+
+```python
+# yield
+def hello():
+    yield "Hello"
+    yield "World"
+
+x = hello()
+print(next(x))
+print(next(x))
+```
