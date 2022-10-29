@@ -19,11 +19,11 @@ Python is a High level, Object Oriented Dynamically typed and Interpreted Progra
 - [operators](#operators)
 - [conditional statements](#conditional-statements) (if-else, switch-case)
 - [loops](#loops) (for, while)
-- iterators
-- Collections (List, Tuple, Set, Dictionary)
-- list comprehension
-- Strings
-- functions
+- [iterators](#iterators)
+- [Collections](#collections) (List, Tuple, Set, Dictionary)
+- [list comprehension](#list-comprehension)
+- [Strings](#strings)
+- [functions](#functions)
 - lambda functions
 - classes
 - OOPs
