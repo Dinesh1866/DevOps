@@ -1006,3 +1006,10 @@ x = hello()
 print(next(x))
 print(next(x))
 ```
+
+
+## Classes
+
+##OOPS
+
+In Python, everything is an object, with its properties/attributes and methods. A Class is like an object constructor, or a "blueprint" for creating objects.
