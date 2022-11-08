@@ -184,3 +184,15 @@ for i in range(n):
             if val >9:
                   val =1
       print()
+
+
+#print values -> 1 to 99 as 01 to 09 everything 2 digits
+n = int(input())
+val =1
+for i in range(n):
+      for j in range(n):
+            print(f"0{val}" if val<10 else val , end=" ")
+            val +=1
+            if val >99:
+                  val =1
+      print()
