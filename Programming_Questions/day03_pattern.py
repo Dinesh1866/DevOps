@@ -1,20 +1,30 @@
 #print based * on the rows based on given input
+'''eg: n =3 ->o/p:
+*
+*
+*'''
 n = int(input())
 for i in range(n):
       print("*")
 
 
 # now in coloumns with space
+'''eg:n=3
+o/p: * * *'''
 for i in range(n):
       print("*", end=" ") 
 
 
 #both coloumns and rows
+'''eg: n=3
+o/p:
+* * *
+* * *
+* * *'''
 for i in range(n):
       for i in range(n):
             print("*",end=" ")
       print()
-
 
 #or 
 for i in range(n):
@@ -28,6 +38,11 @@ for i in range(n):
 
 
 #if we want each letter in each column means
+'''eg:THOR
+o/p:
+T H O R
+T H O R
+T H O R'''
 s2 = "THOR"
 for i in range(n):
       for i in s2:
@@ -36,6 +51,10 @@ for i in range(n):
 
 
 #print alphabets
+'''eg:n=3
+A B C
+D E F
+G H I'''
 n = int(input())
 val =ord("A")
 for i in range(n):
@@ -48,6 +67,10 @@ for i in range(n):
 
 
 #print repeated alphabets and change alphabets for every row
+'''eg: n=3
+A A A
+B B B
+C C C'''
 n = int(input())
 val =ord("A")
 for i in range(n):
@@ -60,6 +83,12 @@ for i in range(n):
 
 
 #change values for every column and print same o/p for every row
+'''eg: n=4
+o/p:
+A B C D
+A B C D
+A B C D
+A B C D'''
 n = int(input())
 for i in range(n):
       val =ord("A")
@@ -71,7 +100,15 @@ for i in range(n):
       print()
 
 
-#
+#if a value is 5 the letters should start from E and go on
+'''eg: n=3 -> 3 rows and 3 columns
+o/p:
+C D E
+F G H
+I J K
+
+eg:n=100 -> 100 rows and 100 columns
+o/p: V W X Y Z ....'''
 n = int(input())
 res = n
 while res>=26:
@@ -84,7 +121,6 @@ for i in range(n):
             if val > ord("Z"):
                   val = ord("A")
       print()
-
 
 #or
 n = int(input())
@@ -100,14 +136,20 @@ for i in range(n):
       print()
 
 
-#print * for odd and @ for even values
+#print * for odd and @ for even values of j/ column
+'''eg: n=4
+o/p:
+@ * @ *
+@ * @ *
+@ * @ *
+@ * @ *
+'''
 n = int(input())
 symbol =["*","@"]
 for i in range(n):
       for j in range(n):
             print(symbol[j%2],end=" ")
       print()
-
 
 #or
 n = int(input())
@@ -118,6 +160,12 @@ for i in range(n):
 
 
 #for every rows now
+'''
+n = 4
+@ @ @ @
+* * * *
+@ @ @ @
+* * * *'''
 n = int(input())
 for i in range(n):
       for j in range(n):
@@ -126,6 +174,11 @@ for i in range(n):
 
 
 #mix of caps and small letters
+'''eg: n=4
+A b C d
+E f G h
+I j K l
+M n O P'''
 n = int(input())
 val = ord("A")
 for i in range(n):
@@ -152,6 +205,11 @@ for i in range(n):
       print()
 
 
+#print * and @ wise versa
+'''eg: n=3
+* @ *
+@ * @
+* @ * '''
 n = int(input())
 l1 = ["*","@"]
 val =0
@@ -162,7 +220,6 @@ for i in range(1,n+1):
             if val>1:
                   val=0
       print()
-
 
 #or
 n = int(input())
@@ -175,6 +232,11 @@ for i in range(1,n+1):
 
 
 #print values for every columns
+'''eg: n=4
+1 2 3 4
+5 6 7 8
+9 1 2 3
+3 4 5 6`'''
 n = int(input())
 val =1
 for i in range(n):
@@ -187,6 +249,11 @@ for i in range(n):
 
 
 #print values -> 1 to 99 as 01 to 09 everything 2 digits
+'''eg:n =4
+01 02 03 04
+05 06 07 08
+09 10 11 12
+13 14 15 16'''
 n = int(input())
 val =1
 for i in range(n):
