@@ -263,3 +263,85 @@ for i in range(n):
             if val >99:
                   val =1
       print()
+
+
+#Print the following pattern
+'''
+* * * * *
+* C B A *
+* D C B *
+* E D C *
+* * * * *'''
+n=int(input())
+val = ord("A")+n//2-1
+for i in range(n):
+      a = val
+      for j in range(n):
+            if j==0 or j==n-1 or i==0 or i==n-1:
+                  print("*", end=" ")
+            else:
+                  print(chr(val),end=" ")#here in first loop val is 66 but during 2nd its increased to 67 so now val start printing from C
+                  val -=1
+                  if val< ord("A"):
+                        val = ord("Z")
+      print()
+      val=a+1
+      if val>ord("Z"):
+            val= ord("A")
+
+
+
+#by using functions fun(n)
+'''
+A B C D E
+B       F
+C       G
+D       H
+E F G H I'''
+def fun1(n):
+      val = ord("A")
+      for i in range(n):
+            a = val
+            for j in range(n):
+                  if j==0 or j==n-1 or i==0 or i==n-1:
+                        print(chr(val), end=" ")
+                  else:
+                        print(" ",end=" ")
+                  val+=1
+                  if val> ord("z"):
+                        val = ord("A")
+            print()
+            val=a+1
+
+n = int(input())
+fun1(n)
+
+
+
+#reverse of above
+'''
+E D C B A
+F       B
+G       C
+H       D
+I H G F E'''
+#by using functions fun(n)
+def fun1(n):
+      val = ord("A")+n-1
+      for i in range(n):
+            a = val
+            for j in range(n):
+                  if j==0 or j==n-1 or i==0 or i==n-1:
+                        print(chr(val), end=" ")
+                  else:
+                        print(" ",end=" ")
+                  val-=1
+                  if val< ord("A"):
+                        val = ord("Z")
+            print()
+            val=a+1
+            if val>ord("Z"):
+                  val= ord("A")
+
+n = int(input())
+fun1(n)
