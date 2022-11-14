@@ -345,3 +345,78 @@ def fun1(n):
 
 n = int(input())
 fun1(n)
+
+
+'''
+* * * * * 
+*   a   *
+* b c d *
+*   e   *
+* * * * *'''
+n = int(input())
+val =ord("a")
+for i in range(n):
+  for j in range(n):
+    if i==0 or i==n-1 or j==0 or j==n-1:
+      print("*", end=" ")
+    elif i==n//2 or j==n//2:
+      print(chr(val),end=" ")
+      val+=1
+    else:
+      print(" ",end=" ")
+  print()
+
+
+'''
+* * a * * 
+*   b   *
+c d e f g
+*   h   *
+* * i * *
+'''
+n = int(input())
+val =ord("A")
+a = ord("a")
+for i in range(n):
+  for j in range(n):
+    if j==n//2:
+      print(chr(val),end=" ")
+      val+=1
+    elif i==n//2:
+      print(chr(a),end=" ")
+      a+=1
+    elif i==0 or i==n-1 or j==0 or j==n-1:
+      print("*", end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+
+
+'''
+* * A * * 
+*   B   *
+a b C d e
+*   D   *
+* * E * *'''
+n = int(input())
+val =ord("A")
+a = ord("a")
+for i in range(n):
+  for j in range(n):
+    if j==n//2:
+      if i==j:
+        print(chr(val),end=" ")
+        val+=1
+        a+=1
+      else:
+        print(chr(val),end=" ")
+        val+=1
+    elif i==n//2:
+      print(chr(a),end=" ")
+      a+=1
+    elif i==0 or i==n-1 or j==0 or j==n-1:
+      print("*", end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+
