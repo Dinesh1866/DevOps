@@ -508,3 +508,31 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
+
+
+'''
+*
+* *
+* * *
+* * * *
+* * * * *'''
+n = int(input())
+for i in range(n):
+  for j in range(i+1):
+    print("*",end=" ")
+  print()
+
+# or
+n = int(input())
+for i in range(1,n+1):
+  print("* "*i)
+
+#or
+n = int(input())
+for i in range(n):
+  for j in range(n):
+      if i>=j:
+            print("*",end=" ")
+  print()
+
+
