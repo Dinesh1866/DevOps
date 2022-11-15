@@ -536,3 +536,36 @@ for i in range(n):
   print()
 
 
+#instead start print characters
+n = int(input())
+val = ord("A")
+for i in range(n):
+  for j in range(i+1):
+    print(chr(val),end=" ")
+  val+=1
+  print()
+
+# or
+val = ord("A")
+for i in range(1,n+1):
+  print(f"{chr(val)} "*i)
+  val +=1
+
+
+'''
+A
+B A
+C B A
+D C B A
+E D C B A'''
+n = int(input())
+val = ord("A")
+for i in range(n):
+  a=val
+  for j in range(i+1):
+    print(chr(val),end=" ")
+    val-=1
+  val=a+1
+  print()
+
+

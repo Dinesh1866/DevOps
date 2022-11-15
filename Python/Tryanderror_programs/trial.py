@@ -8,5 +8,16 @@ print(count)'''
 
 
 n = int(input())
+val = ord("A")
+for i in range(n):
+  a=val
+  for j in range(i+1):
+    print(chr(val),end=" ")
+    val-=1
+  val=a+1
+  print()
+
+'''val = ord("A")
 for i in range(1,n+1):
-  print("* "*i)
+  print(f"{chr(val)} "*i)
+  val +=1'''
