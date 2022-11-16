@@ -568,4 +568,48 @@ for i in range(n):
   val=a+1
   print()
 
+#or this goes for certain value only
+n = int(input())
+for i in range(n):
+  val = ord("A")+i
+  for j in range(i+1):
+    print(chr(val),end=" ")
+    val-=1
+  print()
 
+#or
+n = int(input())
+for i in range(n):
+  val = ord("A")+i
+  while val >ord("z"):
+      val -=26
+  for j in range(i+1):
+    print(chr(val),end=" ")
+    val-=1
+  print()
+
+
+'''
+E D C B A
+J I H G F
+O N M L K 
+T S R Q P
+Y X W V U
+'''
+n = int(input())
+val = ord("A")+(n-1)
+for i in range(n):
+  a=val+(n-1)
+  for j in range(n):
+    print(chr(val),end=" ")
+    val-=1
+  val=a+1
+  print()
+
+
+'''
+A B C D E
+J I H G F
+K L M N O
+T S R Q P
+U V W X Y'''
