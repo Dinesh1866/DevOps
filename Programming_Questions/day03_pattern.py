@@ -699,5 +699,50 @@ for i in range(1,n+1):
     else:
       print(chr(val), end=" ")
       val-=1
+      if val >ord("Z"):
+            val=ord("A")
   val=a+1
+  print()
+
+
+'''
+E D C D A
+J I H G F
+O N M L K
+T S R Q P
+Y X W V U'''
+n=int(input())
+val=ord("A")+(n-1)
+while val>ord("Z"):
+  val-=26
+for i in range(n):
+  a=val
+  for j in range(n):
+    print(chr(val),end=" ")
+    val-=1
+    if val <ord("A"):
+      val=ord("Z")
+  val=a+(n)
+  if val >ord("Z"):
+    val=ord("A")
+  print()
+
+
+'''
+        A
+      C B
+    F E D
+  J I H G
+O N M L K'''
+n=int(input())
+val=ord("A")
+for i in range(1,n+1):
+  a=val
+  for j in range(n):
+    if j<n-i:
+      print(" ",end=" ")
+    else:
+      print(chr(val),end=" ")
+      val-=1
+  val=a+(i+1)
   print()
