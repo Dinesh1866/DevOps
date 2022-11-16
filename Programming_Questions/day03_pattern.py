@@ -627,3 +627,77 @@ for i in range(1,n+1):
       else:val-=1
   val+=(n-1)
   print()
+
+
+'''
+A J K T U
+B I L S v
+C H M R W
+D G N Q X
+E F O P y'''
+
+
+'''
+        *
+      * *
+    * * *
+  * * * *
+* * * * *'''
+n=int(input())
+for i in range(1,n+1):
+  for j in range(n):
+    if j<n-i:
+      print(" ",end=" ")
+    else:
+      print("*", end=" ")
+  print()
+
+
+#or
+n=int(input())
+for i in range(1,n+1):
+  for j in range(n):
+    if i+j>=n-1:
+      print("*",end=" ")
+    else:
+      print(" ", end=" ")
+  print()
+
+#using single for loop
+n=int(input())
+for i in range(1,n+1):
+  print(" "*(n-i),end=" ")
+  print("*"*(i))
+
+# or
+n=int(input())
+for i in range(n):
+  print(" "*(n-i-1),end=" ")
+  print("*"*(i+1))
+
+
+#equlatrial triangle
+n=int(input())
+for i in range(n):
+  print(" "*(n-i-1)+"* "*(i+1))
+
+
+
+'''
+        A
+      B A
+    C B A
+  D C B A
+E D C B A'''
+n=int(input())
+val=ord("A")
+for i in range(1,n+1):
+  a=val
+  for j in range(n):
+    if j<n-i:
+      print(" ",end=" ")
+    else:
+      print(chr(val), end=" ")
+      val-=1
+  val=a+1
+  print()
