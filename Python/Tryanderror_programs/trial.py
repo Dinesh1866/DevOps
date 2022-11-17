@@ -15,15 +15,16 @@ print(count)'''
   J I H G
 O N M L K'''
 
-n=int(input())
-val=ord("A")
-for i in range(1,n+1):
-  a=val
-  for j in range(n):
-    if j<n-i:
-      print(" ",end=" ")
-    else:
-      print(chr(val),end=" ")
-      val-=1
-  val=a+(i+1)
-  print()
+def r270(n):
+  for i in range(n):
+    print("* "*(n-i))
+r270(int(input()))
+
+
+def r270(n):
+  for i in range(n):
+    for j in range(n-i):
+        print("*",end=" ")
+    print()
+
+r270(int(input()))

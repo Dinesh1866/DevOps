@@ -744,5 +744,46 @@ for i in range(1,n+1):
     else:
       print(chr(val),end=" ")
       val-=1
+      if val<ord("A"):
+        val=ord("Z")
   val=a+(i+1)
+  while val>ord("Z"):
+    val-=26
   print()
+
+
+'''
+* * * * *
+* * * *
+* * * 
+* *
+*''' #by defining a function called r270
+def r270(n):
+  for i in range(n):
+    for j in range(n):
+      if j<n-i:
+        print("*",end=" ")
+      else:#can give else or no need
+        print(" ",end=" ")
+    print()
+
+r270(int(input()))
+
+
+#or
+def r270(n):
+  for i in range(n):
+    print("* "*(n-i))
+r270(int(input()))
+
+
+#or
+def r270(n):
+  for i in range(n):
+    for j in range(n-i):
+        print("*",end=" ")
+    print()
+
+r270(int(input()))
+
+
