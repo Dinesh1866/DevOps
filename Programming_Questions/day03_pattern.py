@@ -787,3 +787,39 @@ def r270(n):
 r270(int(input()))
 
 
+'''
+A F J M O
+B G K N
+C H L
+D I
+E'''
+def f1(n):
+  val=ord("A")
+  for i in range(n):
+    a=val
+    for j in range(n):
+      if j<n-i:
+        print(chr(val),end=" ")
+        val= val+(n-j)
+    val = a+1
+    print()
+
+f1(int(input()))
+
+'''
+A F K P U
+B G L Q V
+C H M R W
+D I N S X
+E J O T Y'''
+def f1(n):
+  val=ord("A")
+  for i in range(n):
+    a=val
+    for j in range(n):
+      print(chr(val),end=" ")
+      val+=n
+    val = a+1
+    print()
+
+f1(int(input()))
