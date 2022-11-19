@@ -823,3 +823,67 @@ def f1(n):
     print()
 
 f1(int(input()))
+
+
+'''
+E J O T Y
+D I N S X
+C H M R W
+B G L Q V
+A F K P U'''
+n = int(input())
+val=ord("A")+(n-1)
+count = n
+for i in range(n):
+  a = val
+  c1=count
+  for j in range(n):
+    print(chr(val),end=" ")
+    c1-=1
+    val+=c1
+  print()
+  val = a+1
+
+
+'''
+E I L N O
+D H K M
+C G J
+B F
+A'''
+n = int(input())
+val=ord("A")+(n-1)
+count = n
+for i in range(n):
+  a = val
+  c1=count
+  for j in range(n-i):
+    print(chr(val),end=" ")
+    c1-=1
+    val+=c1
+  print()
+  val = a-1
+
+
+'''
+* * * * *
+  * * * *
+    * * *
+      * *
+        *'''
+def f1(n):
+  for i in range(n):
+    for j in range(n):
+      #if i<=j:
+      if j>=i:
+        print("*",end=" ")
+      else:
+        print(" ",end=" ")
+    print()
+
+f1(int(input()))
+
+
+for i in range(n):
+        print(("  "*i)+("* "(n-i)),end=" ")
+'''if given only one space in print normal print then it will show like cone'''
