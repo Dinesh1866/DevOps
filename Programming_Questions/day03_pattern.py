@@ -887,3 +887,40 @@ f1(int(input()))
 for i in range(n):
         print(("  "*i)+("* "(n-i)),end=" ")
 '''if given only one space in print normal print then it will show like cone'''
+
+
+#NP - Non Prymid
+'''
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+'''
+n= int(input())
+space = (n-1)
+star=0
+for i in range(1,n+1):
+  print(("  "*space)+("* "*(i+star))+("  "*space))
+  star+=1
+  space-=1
+
+#or
+for i in range(n):
+  for j in range(n):
+    if i+j>=n-1:
+      print("*",end=" ")
+    else:print(" ",end=" ")
+  for j in range(i):
+    print("*",end=" ")
+  print()
+
+
+#or 
+for i in range(n):
+  for j in range(n+i):
+    if i+j>=n-1:
+      print("*",end=" ")
+    else:print(" ",end=" ")
+  print()
+
