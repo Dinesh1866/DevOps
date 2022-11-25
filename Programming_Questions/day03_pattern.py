@@ -924,3 +924,109 @@ for i in range(n):
     else:print(" ",end=" ")
   print()
 
+
+#or
+for i in range(n):
+  print(("  "*(n-i-1))+("* "*(2*i+1)))
+
+
+'''
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *'''
+n=int(input())
+for i in range(n):
+  for j in range(n):
+    if j>=i:
+      print("*",end=" ")
+    else:print(" ",end=" ")
+  for j in range(n-1-i):
+    print("*",end=" ")
+  print()
+
+
+#or
+n=int(input())
+for i in range(n):
+  for j in range(2*n-1):
+    if j>=i:
+      print("*",end=" ")
+    else:print(" ",end=" ")
+  print()
+
+
+
+'''
+        1
+      1 2 1
+    1 2 3 2 1
+  1 2 3 4 3 2 1
+1 2 3 4 5 4 3 2 1'''
+n=int(input())
+for i in range(n):
+  val =1
+  for j in range(n):
+    if i+j>=n-1:
+      print(val,end=" ")
+      if j<n-1:
+        val+=1
+      else:
+        val-=1
+    else:print(" ",end=" ")
+  for j in range(i):
+    print(val,end=" ")
+    val-=1
+  print()
+
+
+'''
+        A
+      B C D
+    E F G H I
+  J K L M N O P
+Q R S T U V W X Y'''
+val=ord("A")
+for i in range(n):
+  for j in range(n):
+    if i+j>=n-1:
+      print(chr(val),end=" ")
+      val+=1
+    else:print(" ",end=" ")
+    if val>ord("Z"):
+      val =ord("A")
+  for j in range(i):
+    print(chr(val),end=" ")
+    val+=1
+    if val>ord("Z"):
+      val =ord("A")
+  print()
+
+
+'''
+        A
+      B A B
+    C B A B C
+  D C B A B C D
+E D C B A B C D E
+'''
+n=int(input())
+val=ord("A")
+for i in range(n):
+  a= val
+  for j in range(n):
+    if i+j>=n-1:
+      print(chr(val),end=" ")
+      if j<n-1:
+        val-=1
+    else:print(" ",end=" ")
+    if val<ord("A"):
+      val =ord("Z")
+  for j in range(i):
+    val+=1
+    print(chr(val),end=" ")
+    if val>ord("Z"):
+      val =ord("A")
+  print()
+  val =a+1

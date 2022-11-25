@@ -133,18 +133,75 @@ for i in range(n):
       print()'''
 
 
-n= int(input())
-space = (n-1)
-star=0
-for i in range(1,n+1):
-  print(("  "*space)+("* "*(i+star))+("  "*space))
-  star+=1
-  space-=1
-
-
+'''
+        1
+      1 2 1
+    1 2 3 2 1
+  1 2 3 4 3 2 1
+1 2 3 4 5 4 3 2 1'''
+n=int(input())
 for i in range(n):
-  for j in range(n+i):
+  val =1
+  for j in range(n):
     if i+j>=n-1:
-      print("*",end=" ")
+      print(val,end=" ")
+      if j<n-1:
+        val+=1
+      else:
+        val-=1
     else:print(" ",end=" ")
+  for j in range(i):
+    print(val,end=" ")
+    val-=1
   print()
+
+
+'''
+        A
+      B C D
+    E F G H I
+  J K L M N O P
+Q R S T U V W X Y'''
+n=int(input())
+val=ord("A")
+for i in range(n):
+  for j in range(n):
+    if i+j>=n-1:
+      print(chr(val),end=" ")
+      val+=1
+    else:print(" ",end=" ")
+    if val>ord("Z"):
+      val =ord("A")
+  for j in range(i):
+    print(chr(val),end=" ")
+    val+=1
+    if val>ord("Z"):
+      val =ord("A")
+  print()
+
+
+'''
+        A
+      B A B
+    C B A B C
+  D C B A B C D
+E D C B A B C D E
+'''
+val=ord("A")
+for i in range(n):
+  a= val
+  for j in range(n):
+    if i+j>=n-1:
+      print(chr(val),end=" ")
+      if j<n-1:
+        val-=1
+    else:print(" ",end=" ")
+    if val<ord("A"):
+      val =ord("Z")
+  for j in range(i):
+    val+=1
+    print(chr(val),end=" ")
+    if val>ord("Z"):
+      val =ord("A")
+  print()
+  val =a+1
