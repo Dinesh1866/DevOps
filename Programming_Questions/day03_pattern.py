@@ -1030,3 +1030,19 @@ for i in range(n):
       val =ord("A")
   print()
   val =a+1
+
+
+'''for n=5
+print the following pattern
+    *    
+  * * *  
+* * * * *'''
+n=int(input())
+for i in range(n):
+  for j in range(n):
+    if i+j>=n-1:
+      print("*",end=" ")
+    else:print(" ",end=" ")
+  for j in range(i):
+    print("*",end=" ")
+  print()
