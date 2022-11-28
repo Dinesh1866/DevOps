@@ -1039,10 +1039,28 @@ print the following pattern
 * * * * *'''
 n=int(input())
 for i in range(n):
-  for j in range(n):
+  for j in range(i+1):
     if i+j>=n-1:
       print("*",end=" ")
     else:print(" ",end=" ")
-  for j in range(i):
-    print("*",end=" ")
   print()
+
+
+'''
+* * * * *
+  * * *
+    *'''
+n = int(input())
+for i in range(n):
+  for j in range(n-i):
+    if j>=i:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+
+
+'''
+5 4 3 2 1
+  9 8 7
+    6'''
