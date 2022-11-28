@@ -55,6 +55,18 @@ git push origin --delete <branch_name>
 git merge <branch_name>
 ```
 
+### merge a branch 
+```git
+git merge --no-ff <branch_name>
+```
+> * --no-ff is a flag that tells git to always create a merge commit when merging two branches. By default, git merges using a fast-forward if possible. A fast-forward merge is when the tip of the current branch is set to point to the tip of the merged branch. This is only possible if the merged branch was a descendant of the current branch. If the current branch and the merged branch have diverged, git will not perform a fast-forward merge. Instead, it will create a new merge commit.
+
+> fast-forward merge is a special case of a merge where the target branch was already a descendant of the current branch. In this case, there is no need to create a new commit object – the current branch pointer can simply be moved forward to point to the same commit as the target branch.
+
+> decent explanation of fast-forward merge: https://www.atlassian.com/git/tutorials/using-branches/git-merge
+
+
+
 ### command to merge a branch with a commit message
 ```git
 git merge <branch_name> -m "<commit_message>"
