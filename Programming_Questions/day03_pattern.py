@@ -946,7 +946,6 @@ for i in range(n):
     print("*",end=" ")
   print()
 
-
 #or
 n=int(input())
 for i in range(n):
@@ -955,7 +954,6 @@ for i in range(n):
       print("*",end=" ")
     else:print(" ",end=" ")
   print()
-
 
 
 '''
@@ -1045,6 +1043,15 @@ for i in range(n):
     else:print(" ",end=" ")
   print()
 
+#or
+for i in range(n//2+1):
+  for j in range(n//2+1+i):
+    if i+j>=n//2:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+
 
 '''
 * * * * *
@@ -1053,14 +1060,20 @@ for i in range(n):
 n = int(input())
 for i in range(n):
   for j in range(n-i):
-    if j>=i:
+    if j>=i:#or i<=j
       print("*",end=" ")
     else:
       print(" ",end=" ")
   print()
 
 
-'''
-5 4 3 2 1
-  9 8 7
-    6'''
+#or 
+for i in range(n):
+  for j in range(2*n-1-i):
+    if i<=j:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+
+
