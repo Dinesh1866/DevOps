@@ -1,5 +1,78 @@
 # GIT
 
+## Clone
+to create a copy of codes from remote repository to local repository
+
+```git 
+git clone <remote repository url>
+```
+> git clone will clone the repository to the current directory and create a new folder with the name of the repository. 
+
+> this will clone from the defualt branch i.e: master/main and this will initialize the local repository with the remote repository. and also create a remote branch called origin. and add remote origin url to the local repository.
+
+### Clone specific branch
+to clone a specific branch from the remote repository
+
+```git 
+git clone -b <branch name> <remote repository url>
+```
+or
+```git
+git clone <remote repository url> -b <branch name>
+```
+
+### clone to specific folder
+to clone the repository to a specific folder
+
+```git
+git clone <remote repository url> <folder name>
+```
+
+### clone to specific branch and folder
+to clone a specific branch to a specific folder
+
+```git
+git clone -b <branch name> <remote repository url> <folder name>
+```
+or
+```git
+git clone <remote repository url> -b <branch name> <folder name>
+```
+
+
+### Clone specific folder
+to clone a specific folder from the remote repository
+
+```git
+git clone --single-branch --branch <branch name> --depth 1 <remote repository url> <folder name>
+```
+
+
+
+## fetch
+```git
+git fetch origin
+```
+or 
+```git
+git fetch origin <branch name>
+```
+> git fetch will fetch the latest changes from the remote repository. and will not merge the changes to the local repository.
+
+
+## pull
+```git
+git pull origin
+```
+or 
+```git
+git pull origin <branch name>
+```
+
+> git pull will fetch/retrive the latest changes from the remote repository and will merge the changes to the local repository.
+
+
+
 ## branch
 branching is a way to work on different versions of a repository at one time.
 
