@@ -71,6 +71,9 @@ git pull origin <branch name>
 
 > git pull will fetch/retrive the latest changes from the remote repository and will merge the changes to the local repository.
 
+## fork
+to create a copy of a repository from remote repository to your own remote repository
+
 
 
 ## branch

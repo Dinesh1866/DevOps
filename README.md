@@ -6,7 +6,7 @@ This Repository will get updated over time with DevOps study Materials and my sa
 - [HTML](https://github.com/Dinesh1866/DevOps/blob/main/HTML/README.md)
 - [CSS](https://github.com/Dinesh1866/DevOps/blob/main/css/README.md)
 - [JavaScript](https://github.com/Dinesh1866/DevOps/blob/main/JS/README.md)
-- [Git](https://github.com/Dinesh1866/DevOps/blob/main/Git/README.md)
+- [Git](https://github.com/Dinesh1866/DevOps/blob/main/git/readme.md)
 - [Linux](https://github.com/Dinesh1866/DevOps/blob/main/Linux/README.md)
 - [Azure](https://github.com/Dinesh1866/DevOps/blob/main/Azure/README.md)
 - [Docker](https://github.com/Dinesh1866/DevOps/blob/main/Docker/readme.md)
