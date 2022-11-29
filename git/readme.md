@@ -187,3 +187,45 @@ git checkout -b <branch_name>
 ```git
 git branch -m <old_branch_name> <new_branch_name>
 ```
+
+
+## SSH
+ssh stands for secure shell. it is a protocol that allows you to securely connect to a remote computer. it is used to connect to a remote server and execute commands on it. it is also used to transfer files between the local computer and the remote server.
+
+this will allow securec connection to the remote server. and will not ask for username and password everytime you push or pull.
+
+RSA means Rivest–Shamir–Adleman. it is an algorithm used by modern computers to encrypt and decrypt messages. it is an asymmetric cryptographic algorithm. it is one of the first public-key cryptosystems and is widely used for secure data transmission. in simple words, it is a way to encrypt and decrypt messages. it is used to generate a public and private key pair. the public key can be given to anyone and the private key must be kept secret. the public key is used to encrypt the message and the private key is used to decrypt the message.
+
+### generate ssh key
+```git
+ssh-keygen -t rsa -C email"
+
+### generate ssh key
+```git
+ssh-keygen -t rsa -b 4096 -C "
+```
+
+### add ssh key to ssh-agent
+```git
+eval "$(ssh -agent -s)"
+```
+
+### add ssh key to ssh-agent
+```git
+ssh-add ~/.ssh/id_rsa
+```
+
+### copy ssh key to clipboard
+```git
+clip < ~/.ssh/id_rsa.pub
+```
+
+### copy ssh key to clipboard
+```git
+pbcopy < ~/.ssh/id_rsa.pub
+```
+
+### copy ssh key to clipboard
+```git
+xclip -sel clip < ~/.ssh/id_rsa.pub
+```
