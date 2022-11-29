@@ -1,4 +1,281 @@
 # GIT
+Git is a distributed version control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
+
+## Git Commands
+
+### Git Config
+
+```bash
+# Git Config
+# git config --global user.name "John Doe"
+# git config --global user.email
+# git config --global core.editor "code --wait"
+# git config --global color.ui true
+# git config --global alias.co checkout
+# git config --global alias.br branch
+# git config --global alias.ci commit
+# git config --global alias.st status
+# git config --global alias.unstage 'reset HEAD --'
+# git config --global alias.last 'log -1 HEAD'
+# git config --global alias.visual '!gitk'
+# git config --global alias.graph "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+# git config --global alias.graph2 "log --graph --decorate --pretty=oneline --abbrev-commit --all --branches"
+```
+
+### Git Init
+
+```git
+git init
+git init --bare
+```
+
+### Git Status
+      
+      ```git
+      git status
+      git status -s
+      git status -s -b
+      git status -s -b -u
+      git status -s -b -uall
+      git status -s -b -uall --ignored
+      ```
+
+### Git Add
+      
+      ```git
+      git add .
+      git add -A
+      git add -u
+      git add -p
+      git add -i
+      git add --all
+      git add --update
+      git add --patch
+      git add --interactive
+      git add --ignore-removal
+      git add --ignore-errors
+      git add --renormalize
+      git add --chmod=+x
+      ```
+
+### Git Commit
+      
+      ```git
+      git commit -m "message"
+      git commit -a -m "message"
+      git commit -v
+      git commit -a -v
+      git commit -a -v -m "message"
+      git commit -a -v -m "message" --amend
+      git commit -a -v -m "message" --amend --no-edit
+      git commit -a -v -m "message" --amend --no-edit --allow-empty
+      git commit -a -v -m "message" --amend --no-edit --allow-empty --no-verify
+      git commit -a -v -m "message" --amend --no-edit --allow-empty --no-verify --no-gpg-sign
+      git commit -a -v -m "message" --amend --no-edit --allow-empty --no-verify --no-gpg-sign --date="2021-01-01 00:00:00"
+      ```
+
+### Git Log
+      
+      ```git
+      git log
+      git log --oneline
+      git log --oneline --decorate
+      git log --oneline --decorate --graph
+      git log --oneline --decorate --graph --all
+      git log --oneline --decorate --graph --all --branches
+
+      git log --oneline --decorate --graph --all --branches --since="2021-01-01 00:00:00"
+      git log --oneline --decorate --graph --all --branches --since="2021-01-01 00:00:00" --until="2021-01-01 00:00:00"
+      git log --oneline --decorate --graph --all --branches --since="2021-01-01 00:00:00" --until="2021-01-01 00:00:00" --author="John Doe"
+      ```
+
+### Git Show
+      
+      ```git
+      git show
+      git show HEAD
+      git show HEAD~1
+      git show HEAD~2
+      ```
+
+### Git Diff
+      
+      ```git
+      git diff
+      git diff --staged
+      git diff --cached
+      git diff --name-only
+      git diff --name-status
+      git diff --name-status --cached
+      git diff --name-status --staged
+      git diff --name-status --cached --ignore-submodules
+      git diff --name-status --staged --ignore-submodules
+      git diff --name-status --cached --ignore-submodules --ignore-space-at-eol
+      git diff --name-status --staged --ignore-submodules --ignore-space-at-eol
+      ```
+
+### Git Reset
+      
+      ```git
+      git reset
+      git reset --soft
+      git reset --mixed
+      git reset --hard
+      git reset --merge
+      git reset --keep
+      git reset --patch
+      git reset --recurse-submodules
+      git reset --recurse-submodules=on-demand
+      ```
+
+### Git Checkout
+      
+      ```git
+      git checkout
+      git checkout -- .
+      git checkout -- <file>
+      git checkout -- <file> <file>
+      git checkout -- <file> <file> <file>
+      git checkout -- <file> <file> <file> <file>
+      ```
+
+### Git Branch
+      
+      ```git
+      git branch
+      git branch -a
+      git branch -r
+      git branch -v
+      git branch -vv
+      git branch -vvv
+      git branch -vvvv
+      ```
+
+### Git Tag
+      
+      ```git
+      git tag
+      git tag -l
+      git tag -l "v1.8.5*"
+      git tag -l "v1.8.5*" --points-at HEAD
+      git tag -l "v1.8.5*" --points-at HEAD --contains 2b9d75c
+      git tag -l "v1.8.5*" --points-at HEAD --contains 2b9d75c --merged
+      git tag -l "v1.8.5*" --points-at HEAD --contains 2b9d75c --merged --no-merged
+      git tag -l "v1.8.5*" --points-at HEAD --contains 2b9d75c --merged --no-merged --column
+      git tag -l "v1.8.5*" --points-at HEAD --contains 2b9d75c --merged --no-merged --column --sort=-creatordate
+      ```
+
+### Git Merge
+      
+      ```git
+      git merge
+      git merge --no-ff
+      git merge --no-ff --no-commit
+      git merge --no-ff --no-commit --no-edit
+      git merge --no-ff --no-commit --no-edit --no-verify
+      git merge --no-ff --no-commit --no-edit --no-verify --no-gpg-sign
+      git merge --no-ff --no-commit --no-edit --no-verify --no-gpg-sign --allow-unrelated-histories
+      git merge --no-ff --no-commit --no-edit --no-verify --no-gpg-sign --allow-unrelated-histories --allow-empty
+      git merge --no-ff --no-commit --no-edit --no-verify --no-gpg-sign --allow-unrelated-histories --allow-empty --no-edit
+      git merge --no-ff --no-commit --no-edit --no-verify --no-gpg-sign --allow-unrelated-histories --allow-empty --no-edit --no-verify
+      git merge --no-ff --no-commit --no-edit --no-verify --no-gpg-sign --allow-unrelated-histories --allow-empty --no-edit --no-verify --no-gpg-sign
+      ```
+
+### Git Rebase
+      
+      ```git
+      git rebase
+      git rebase --interactive
+      git rebase --interactive --root
+      git rebase --interactive --root --autosquash
+      git rebase --interactive --root --autosquash --no-ff
+      git rebase --interactive --root --autosquash --no-ff --no-verify
+      ```
+
+### Git Cherry-Pick
+      
+      ```git
+      git cherry-pick
+      git cherry-pick --no-commit
+      git cherry-pick --no-commit --no-edit
+      git cherry-pick --no-commit --no-edit --no-verify
+      ```
+
+### Git Revert
+      
+      ```git
+      git revert
+      git revert --no-commit
+      git revert --no-commit --no-edit
+      git revert --no-commit --no-edit --no-verify
+      ```
+
+### Git Clean
+      
+      ```git
+      git clean
+      git clean -f
+      git clean -f -d
+      git clean -f -d -x
+      git clean -f -d -x -n
+      git clean -f -d -x -n -e <file>
+      git clean -f -d -x -n -e <file> -e <file>
+      ```
+
+### Git Stash
+      
+      ```git
+      git stash
+      git stash list
+      git stash list --stat
+      git stash list --stat --patch
+      git stash list --stat --patch --no-abbrev
+
+      git stash show
+      git stash show --stat
+      git stash show --stat --patch
+
+
+      git stash apply
+      git stash apply --index
+      git stash apply --index --patch
+      git stash apply --index --patch --stat
+      git stash apply --index --patch --stat --no-abbrev
+
+      git stash pop
+      git stash pop --index
+      git stash pop --index --patch
+      git stash pop --index --patch --stat
+      git stash pop --index --patch --stat --no-abbrev
+
+      git stash drop
+      git stash drop --index
+      git stash drop --index --patch
+      git stash drop --index --patch --stat
+      git stash drop --index --patch --stat --no-abbrev
+
+      git stash clear
+      git stash clear --index
+      git stash clear --index --patch
+
+      git stash branch
+      git stash branch --index
+      git stash branch --index --patch
+
+      git stash save
+      git stash save --index
+      git stash save --index --patch
+
+      git stash create
+      git stash create --index
+      git stash create --index --patch
+
+      git stash store
+      git stash store --index
+      git stash store --index --patch
+      ```
+
+      
 
 ## Clone
 to create a copy of codes from remote repository to local repository
