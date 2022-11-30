@@ -1190,6 +1190,7 @@ for i in range(n//2+1):
   l1.append("  "*(n//2-i)+"* "*(2*i+1))
 print("\n".join(l1+l1[-2::-1]))
 
+
 '''
         *
       *   *
@@ -1198,8 +1199,42 @@ print("\n".join(l1+l1[-2::-1]))
         *
         '''
 
-n=int(input())
+n = int(input())
+for i in range(n):
+  for j in range(n):
+    if i+j==(n//2) or j-i==(n//2) or i-j==(n//2) or i+j==n+(n//2)-1:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+
+
+'''
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*'''
+n =int(input())
 l1=[]
-for i in range(n//2+1):
-  l1.append("  "*(n-i-1)+"* "*(2*i+1))
-print("\n".join(l1+l1[1::-1]))
+for i in range(1,n+1):
+  l1.append("* "*i)
+print("\n".join(l1+l1[-2::-1]))
+
+
+'''
+*
+* *
+* * *
+* *
+*
+'''
+n =int(input())
+l1=[]
+for i in range(1,((n+1)//2)+1):
+  l1.append("* "*i)
+print("\n".join(l1+l1[-2::-1]))

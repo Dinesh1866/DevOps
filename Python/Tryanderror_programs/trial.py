@@ -135,52 +135,33 @@ for i in range(n):
       print()'''
 
 
-
-'''n=int(input())
-for i in range(n//2+1):
-  for j in range(n//2+1+i):
-    if i+j>=n//2:
-      print("*",end=" ")
-    else:
-      print(" ",end=" ")
-  print()'''
-
-
-'''n=int(input())
+'''
+when n = 5
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*'''
+n =int(input())
 l1=[]
-for i in range(n):
-  l1.append("  "*(n-i-1)+"* "*(2*i+1))
+for i in range(1,n+1):
+  l1.append("* "*i)
 print("\n".join(l1+l1[-2::-1]))
 
-n=int(input())
+
+'''
+*
+* *
+* * *
+* *
+*
+'''
+n =int(input())
 l1=[]
-for i in range(n):
-  l1.append("  "*(n-i-1)+"* "*(2*i+1))
-print("\n".join(l1+list(reversed(l1[:-1]))))
-
-
-#tarce the code
-n=int(input())
-l1=[]
-for i in range(n):
-  l1.append("  "*(n-i-1)+"* "*(2*i+1))
-print("\n".join(l1+["P Y S P I D E R S"]+l1[-2::-1]))'''
-
-n=int(input())
-l1=[]
-for i in range(n//2+1):
-  l1.append("  "*(n-i-1)+"* "*(2*i+1))
-print("\n".join(l1+l1[1::-1]))
-
-
-n=int(input())
-l1=[]
-for i in range(n//2+1):
-  l1.append("  "*(n//2-i)+"* "*(2*i+1))
-print("\n".join(l1+l1[1::-1]))
-
-n=int(input())
-l1=[]
-for i in range(n//2+1):
-  l1.append("  "*(n//2-i)+"* "*(2*i+1))
+for i in range(1,((n+1)//2)+1):
+  l1.append("* "*i)
 print("\n".join(l1+l1[-2::-1]))
