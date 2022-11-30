@@ -1077,3 +1077,124 @@ for i in range(n):
   print()
 
 
+'''
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+'''
+n=int(input())
+l1=[]
+for i in range(n):
+  l1.append("  "*(n-i-1)+"* "*(2*i+1))
+print("\n".join(l1+l1[-2::-1]))
+
+#or
+n=int(input())
+l1=[]
+for i in range(n):
+  l1.append("  "*(n-i-1)+"* "*(2*i+1))
+print("\n".join(l1+list(reversed(l1[:-1]))))
+
+#or
+n=int(input())
+l1=["  "*(n-i-1)+"* "*(2*i+1)for i in range(n)]
+print("\n".join(l1+l1[-2::-1]))
+
+
+'''
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+P Y S P I D E R S
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+'''
+n=int(input())
+l1=[]
+for i in range(n):
+  l1.append("  "*(n-i-1)+"* "*(2*i+1))
+print("\n".join(l1+["P Y S P I D E R S"]+l1[-2::-1]))
+
+
+'''
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+P Y S P I D E R S
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *'''
+n=int(input())
+l1=[]
+for i in range(n):
+  l1.append("  "*(n-i-1)+"* "*(2*i+1))
+print("\n".join(l1+["P Y S P I D E R S"]+l1[::-1]))
+
+
+#try this
+n=int(input())
+l1=[]
+for i in range(n-1):
+  l1.append("  "*(n-i-1)+"* "*(2*i+1))
+print("\n".join(l1+["P Y S P I D E R S"]+l1[::-1]))
+
+
+'''
+      *
+    * * *
+  * * * * *
+* * * * * * *
+S P I D E R S
+* * * * * * *
+  * * * * *
+    * * *
+      *
+'''
+n=int(input())
+l1=[]
+for i in range(n):
+  l1.append("  "*(n-i-1)+"* "*(2*i+1))
+print("\n".join(l1+["S P I D E R S"]+l1[::-1]))
+
+
+'''
+        *
+      * * *
+    * * * * *
+      * * *
+        *
+'''
+n=int(input())
+l1=[]
+for i in range(n//2+1):
+  l1.append("  "*(n-i-1)+"* "*(2*i+1))
+print("\n".join(l1+l1[1::-1]))
+
+
+'''
+        *
+      *   *
+    *       *
+      *   *
+        *
+        '''
+
+n=int(input())
+l1=[]
+for i in range(n//2+1):
+  l1.append("  "*(n-i-1)+"* "*(2*i+1))
+print("\n".join(l1+l1[1::-1]))
+
