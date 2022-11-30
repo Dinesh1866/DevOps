@@ -176,7 +176,5 @@ print("\n".join(l1+l1[1::-1]))
 n=int(input())
 l1=[]
 for i in range(n//2+1):
-  l1.append("  "*(n-i-1)+"* "*(2*i+1))
+  l1.append("  "*(n//2-i)+"* "*(2*i+1))
 print("\n".join(l1+l1[1::-1]))
-
-
