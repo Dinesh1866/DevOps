@@ -1246,6 +1246,22 @@ for i in range(2*n-1):
       print("*",end=" ")
   print()
 
+#using one for loop
+n =int(input())
+for i in range(2*n-1):
+  if i<n-1:
+    print("* "*(i+1))
+  else:
+    print("* "*(2*n-1-i))
+
+
+#or
+n=int(input())
+a=1
+for i in range(2*n-1):
+  print("* "*a)
+  if i<n-1:a+=1
+  else:a-=1
 
 '''
 *
@@ -1259,3 +1275,14 @@ l1=[]
 for i in range(1,((n+1)//2)+1):
   l1.append("* "*i)
 print("\n".join(l1+l1[-2::-1]))
+
+
+#without list using loops
+n =int(input())
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
