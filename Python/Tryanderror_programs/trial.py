@@ -143,7 +143,7 @@ for i in range(n):
 * *
 *
 '''
-n =int(input())
+'''n =int(input())
 l1=[]
 for i in range(1,((n+1)//2)+1):
   l1.append("* "*i)
@@ -166,4 +166,145 @@ for i in range(n):
   if i<=n//2:
     print("* "*(i+1))
   else:
-    print("* "*(n-i))
+    print("* "*(n-i))'''
+
+#1
+'''n =int(input())
+val = ord("A")
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(chr(val),end=" ")
+      val+=1
+    else:
+      print(" ",end=" ")
+  print()
+
+
+#2
+n =int(input())
+for i in range(n):
+  val = ord("A")
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(chr(val),end=" ")
+      val+=1
+    else:
+      print(" ",end=" ")
+  print()
+
+#3
+n =int(input())
+val=ord("A")+n-1
+for i in range(n):
+  a = val
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(chr(val),end=" ")
+      val-=1
+    else:
+      print(" ",end=" ")
+  val =a-1
+  print()
+
+#4
+n=int(input())
+a=1
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(a,end=" ")
+      a+=1
+  print()
+
+#5
+n=int(input())
+val=ord("A") 
+for i in range(n):
+  a = val
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(chr(val),end=" ")
+    else:
+      print(" ",end=" ")
+  val +=1
+  print()'''
+
+
+
+#diff pattern
+n =int(input())
+val = 1
+for i in range(2*n-1):
+  a = val
+  for j in range(n):
+    if i>=j and i+j<=2*n-2:
+      print(val,end=" ")
+      val-=1
+  if i<n-1:
+    val = a+1
+  else:
+    val = a-1
+  print()
+
+n=int(input())
+a=1
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(f"0{a}",end=" ")
+      a+=1
+  print()
+
+#SPIDERMAN
+n=int(input())
+S = "SPIDERMAN"
+a = 0
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(S[a],end=" ")
+      a+=1
+  print()
+
+n = int(input())
+a = 0
+num = 1
+val = ord("A")
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1 and a%2==0:
+      print(chr(val),end=" ")
+      val+=1
+    elif i>=j and i+j<=n-1 and a%2!=0:
+      print(num,end=" ")
+      num+=1
+    else:
+      print(" ",end=" ")
+    a +=1
+  print()
+
+#mistakes
+'''n=int(input())
+val = ord("A")
+for i in range(n):
+  a = val
+  for j in range(n):
+    if i>=j and i+j<=n-1 and i<=n//2:
+      print(chr(val),end=" ")
+      val-=1
+    elif i>=j and i+j<=n-1 and i>n//2:
+      print(chr(val),end=" ")
+      val+=1
+  print()
+  val = a+1'''
+
+
+#1
+'''
+A
+B C
+C B A
+B A
+A'''
+

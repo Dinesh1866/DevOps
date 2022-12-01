@@ -1295,3 +1295,14 @@ for i in range(n):
     print("* "*(i+1))
   else:
     print("* "*(n-i))
+
+
+#or
+n=int(input())
+a=1
+for i in range(n):
+  print("* "*a)
+  if i<n//2:a+=1
+  else:a-=1
+
+
