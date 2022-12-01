@@ -160,17 +160,10 @@ for i in range(n):
       print(" ",end=" ")
   print()
 
+#with one for loop
 n =int(input())
-for i in range(2*n-1):
-  if i<n-1:
+for i in range(n):
+  if i<=n//2:
     print("* "*(i+1))
   else:
-    print("* "*(2*n-1-i))
-
-
-n=int(input())
-a=1
-for i in range(2*n-1):
-  print("* "*a)
-  if i<n-1:a+=1
-  else:a-=1
+    print("* "*(n-i))

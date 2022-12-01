@@ -1286,3 +1286,12 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
+
+
+#with one for loop
+n =int(input())
+for i in range(n):
+  if i<=n//2:
+    print("* "*(i+1))
+  else:
+    print("* "*(n-i))
