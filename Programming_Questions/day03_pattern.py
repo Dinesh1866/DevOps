@@ -1306,3 +1306,104 @@ for i in range(n):
   else:a-=1
 
 
+'''
+1
+2 1
+3 2 1
+4 3 2 1
+5 4 3 2 1
+4 3 2 1
+3 2 1
+2 1
+1'''
+n =int(input())
+val = 1
+for i in range(2*n-1):
+  a = val
+  for j in range(n):
+    if i>=j and i+j<=2*n-2:
+      print(val,end=" ")
+      val-=1
+  if i<n-1:
+    val = a+1
+  else:
+    val = a-1
+  print()
+
+
+'''
+01
+02 03
+04 05 06
+07 08
+09
+'''
+n=int(input())
+a=1
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(f"0{a}",end=" ")
+      a+=1
+  print()
+
+
+#SPIDERMAN
+'''
+S
+P I
+D E R
+M A
+N'''
+n=int(input())
+S = "SPIDERMAN"
+a = 0
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(S[a],end=" ")
+      a+=1
+  print()
+
+
+'''
+A
+1 B
+C 2 D
+3 E
+F
+'''
+n = int(input())
+a = 0
+num = 1
+val = ord("A")
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1 and a%2==0:
+      print(chr(val),end=" ")
+      val+=1
+    elif i>=j and i+j<=n-1 and a%2!=0:
+      print(num,end=" ")
+      num+=1
+    else:
+      print(" ",end=" ")
+    a +=1
+  print()
+
+
+'''
+when n =5
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+  * * * *
+    * * *
+      * *
+        *'''
+n =int(input())
+l1=[]
+for i in range(1,n+1):
+  l1.append("  "*(n-i)+"* "*i)
+print("\n".join(l1+l1[-2::-1]))

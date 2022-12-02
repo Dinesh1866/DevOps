@@ -308,3 +308,23 @@ C B A
 B A
 A'''
 
+
+
+#west pryamid
+n =int(input())
+l1=[]
+for i in range(1,n+1):
+  l1.append("  "*(n-i)+"* "*i)
+print("\n".join(l1+l1[-2::-1]))
+
+
+#or try with for loop
+'''n =int(input())
+for i in range(2*n-1):
+  for j in range(n):
+    if j>=n-i and:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()'''
+
