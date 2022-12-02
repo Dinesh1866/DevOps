@@ -311,18 +311,28 @@ A'''
 
 
 #west pryamid
-n =int(input())
+'''n =int(input())
 l1=[]
 for i in range(1,n+1):
   l1.append("  "*(n-i)+"* "*i)
 print("\n".join(l1+l1[-2::-1]))
 
 
-#or try with for loop
 n =int(input())
+a=1
 for i in range(2*n-1):
-  for j in range(n):
-    if i+j>=n-1 and i-j<=n-1:
+  print("  "*(n-a)+"* "*a)
+  if i<n-1:
+    a+=1
+  else:
+    a-=1'''
+
+
+#note single space change in space will make it diamond
+n =int(input())
+for i in range(n):
+  for j in range(n//2+1):
+    if i+j>=n//2 and i-j<=n//2:
       print("*",end=" ")
     else:
       print(" ",end=" ")

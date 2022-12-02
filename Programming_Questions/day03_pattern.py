@@ -1499,3 +1499,50 @@ for i in range(2*n-1):
     else:
       print(" ",end=" ")
   print()
+
+#without using list and just with single for loop
+n =int(input())
+a=1
+for i in range(2*n-1):
+  print("  "*(n-a)+"* "*a)
+  if i<n-1:
+    a+=1
+  else:
+    a-=1
+
+
+#note single space change in space will make it diamond
+'''
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+ * * * *
+  * * *
+   * *
+    *'''
+n =int(input())
+a=1
+for i in range(2*n-1):
+  print(" "*(n-a)+"* "*a)
+  if i<n-1:
+    a+=1
+  else:
+    a-=1
+
+
+'''
+    *
+  * *
+* * *
+  * *
+    *'''
+n =int(input())
+for i in range(n):
+  for j in range(n//2+1):
+    if i+j>=n//2 and i-j<=n//2:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
