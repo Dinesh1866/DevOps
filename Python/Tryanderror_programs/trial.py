@@ -337,3 +337,17 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
+
+
+#assignment
+'''
+for n = 7
+draw heart with stars'''
+n =int(input())
+for i in range(n):
+  for j in range(n):
+    if (i==0 and j%3!=0) or (i==1 and j%3==0) or (i-j==2) or (i+j==8):
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
