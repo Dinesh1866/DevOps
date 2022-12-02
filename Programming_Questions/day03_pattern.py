@@ -1254,7 +1254,6 @@ for i in range(2*n-1):
   else:
     print("* "*(2*n-1-i))
 
-
 #or
 n=int(input())
 a=1
@@ -1262,6 +1261,7 @@ for i in range(2*n-1):
   print("* "*a)
   if i<n-1:a+=1
   else:a-=1
+
 
 '''
 *
@@ -1304,6 +1304,68 @@ for i in range(n):
   print("* "*a)
   if i<n//2:a+=1
   else:a-=1
+
+#own exapmles trials
+n =int(input())
+val = ord("A")
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(chr(val),end=" ")
+      val+=1
+    else:
+      print(" ",end=" ")
+  print()
+
+
+#2
+n =int(input())
+for i in range(n):
+  val = ord("A")
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(chr(val),end=" ")
+      val+=1
+    else:
+      print(" ",end=" ")
+  print()
+
+#3
+n =int(input())
+val=ord("A")+n-1
+for i in range(n):
+  a = val
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(chr(val),end=" ")
+      val-=1
+    else:
+      print(" ",end=" ")
+  val =a-1
+  print()
+
+#4
+n=int(input())
+a=1
+for i in range(n):
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(a,end=" ")
+      a+=1
+  print()
+
+#5
+n=int(input())
+val=ord("A") 
+for i in range(n):
+  a = val
+  for j in range(n):
+    if i>=j and i+j<=n-1:
+      print(chr(val),end=" ")
+    else:
+      print(" ",end=" ")
+  val +=1
+  print()
 
 
 '''
@@ -1402,8 +1464,38 @@ when n =5
     * * *
       * *
         *'''
+#using list
 n =int(input())
 l1=[]
 for i in range(1,n+1):
   l1.append("  "*(n-i)+"* "*i)
 print("\n".join(l1+l1[-2::-1]))
+
+
+#without using list and print by using for loop
+n =int(input())
+for i in range(n):
+  for j in range(n):
+    if i+j>=n-1:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+for i in range(1,n):
+  for j in range(n):
+    if i<=j:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+
+
+#using two for loops
+n =int(input())
+for i in range(2*n-1):
+  for j in range(n):
+    if i+j>=n-1 and i-j<=n-1:
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()

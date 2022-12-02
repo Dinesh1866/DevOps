@@ -233,7 +233,7 @@ for i in range(n):
 
 
 #diff pattern
-n =int(input())
+'''n =int(input())
 val = 1
 for i in range(2*n-1):
   a = val
@@ -282,7 +282,7 @@ for i in range(n):
     else:
       print(" ",end=" ")
     a +=1
-  print()
+  print()'''
 
 #mistakes
 '''n=int(input())
@@ -319,12 +319,11 @@ print("\n".join(l1+l1[-2::-1]))
 
 
 #or try with for loop
-'''n =int(input())
+n =int(input())
 for i in range(2*n-1):
   for j in range(n):
-    if j>=n-i and:
+    if i+j>=n-1 and i-j<=n-1:
       print("*",end=" ")
     else:
       print(" ",end=" ")
-  print()'''
-
+  print()
