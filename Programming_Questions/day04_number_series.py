@@ -39,10 +39,10 @@ print()
 n = int(input())
 for i in range(n):
       print(i*2+1,end=" ")
-print()'''
+print()
 
 #print one even number and one odd number
-'''n = int(input())
+n = int(input())
 val = 1
 for i in range(n):
       if i%2==0:
@@ -56,7 +56,7 @@ n = int(input())
 for i in range(n):
       if i%2==0:print(i+2,end=" ")
       else:print(i,end=" ")
-print()'''
+print()
 
 
 #add odd numbers to previous num eg: 2,5,10,17,26
@@ -78,4 +78,6 @@ n = int(input())
 a,b = 0,1
 for i in range(n):
       print(a,end=" ")
-      a,b = b,a+b
+      a,b = b,a+b'''
+
+
