@@ -8,7 +8,7 @@ class sum:
         print("avg",sum//len(list))
         return sum//len(list)
 
-n = int(input("Enter the number of elements : "))
+'''n = int(input("Enter the number of elements : "))
 list = []
 for i in range(0, n):
     ele = int(input())
@@ -16,4 +16,4 @@ for i in range(0, n):
 #list = map(int,input("\nEnter the numbers : ").split())
 
 
-sum.sumofnumbers(list)
+sum.sumofnumbers(list)'''
