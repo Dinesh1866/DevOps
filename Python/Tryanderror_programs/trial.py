@@ -285,19 +285,20 @@ for i in range(n):
   print()'''
 
 #mistakes
-'''n=int(input())
+n=int(input())
+a = 1
 val = ord("A")
 for i in range(n):
   a = val
-  for j in range(n):
-    if i>=j and i+j<=n-1 and i<=n//2:
-      print(chr(val),end=" ")
-      val-=1
-    elif i>=j and i+j<=n-1 and i>n//2:
-      print(chr(val),end=" ")
-      val+=1
+  for j in range(n//2+1):
+    if i>=j and i+j<=n-1:
+        print(chr(val),end=" ")
+        val-=1
   print()
-  val = a+1'''
+  if i<n//2:
+    val = a+1
+  else:
+    val = a-1
 
 
 #1
@@ -329,7 +330,7 @@ for i in range(2*n-1):
 
 
 #note single space change in space will make it diamond
-n =int(input())
+'''n =int(input())
 for i in range(n):
   for j in range(n//2+1):
     if i+j>=n//2 and i-j<=n//2:
@@ -340,14 +341,14 @@ for i in range(n):
 
 
 #assignment
-'''
+
 for n = 7
 draw heart with stars'''
-n =int(input())
+'''n =int(input())
 for i in range(n):
   for j in range(n):
     if (i==0 and j%3!=0) or (i==1 and j%3==0) or (i-j==2) or (i+j==8):
       print("*",end=" ")
     else:
       print(" ",end=" ")
-  print()
+  print()'''

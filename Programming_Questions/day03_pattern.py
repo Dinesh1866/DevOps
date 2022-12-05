@@ -1454,6 +1454,27 @@ for i in range(n):
 
 
 '''
+A
+B A
+C B A
+B A
+A'''
+n=int(input())
+a = 1
+val = ord("A")
+for i in range(n):
+  a = val
+  for j in range(n//2+1):
+    if i>=j and i+j<=n-1:
+        print(chr(val),end=" ")
+        val-=1
+  print()
+  if i<n//2:
+    val = a+1
+  else:
+    val = a-1
+
+'''
 when n =5
         *
       * *
