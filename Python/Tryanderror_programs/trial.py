@@ -233,7 +233,7 @@ for i in range(n):
 
 
 #diff pattern
-'''n =int(input())
+n =int(input())
 val = 1
 for i in range(2*n-1):
   a = val
@@ -282,7 +282,7 @@ for i in range(n):
     else:
       print(" ",end=" ")
     a +=1
-  print()'''
+  print()
 
 #mistakes
 n=int(input())
@@ -301,48 +301,9 @@ for i in range(n):
     val = a-1
 
 
-#1
-'''
-A
-B C
-C B A
-B A
-A'''
-
-
-
-#west pryamid
-'''n =int(input())
-l1=[]
-for i in range(1,n+1):
-  l1.append("  "*(n-i)+"* "*i)
-print("\n".join(l1+l1[-2::-1]))
-
-
-n =int(input())
-a=1
-for i in range(2*n-1):
-  print("  "*(n-a)+"* "*a)
-  if i<n-1:
-    a+=1
-  else:
-    a-=1'''
-
-
-#note single space change in space will make it diamond
-'''n =int(input())
-for i in range(n):
-  for j in range(n//2+1):
-    if i+j>=n//2 and i-j<=n//2:
-      print("*",end=" ")
-    else:
-      print(" ",end=" ")
-  print()
-
-
 #assignment
 
-for n = 7
+'''for n = 7
 draw heart with stars'''
 '''n =int(input())
 for i in range(n):
