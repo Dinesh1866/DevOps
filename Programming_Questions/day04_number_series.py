@@ -78,11 +78,11 @@ n = int(input())
 a,b = 0,1
 for i in range(n):
       print(a,end=" ")
-      a,b = b,a+b'''
+      a,b = b,a+b
 
 
 # fibonocci series using recursion
-'''def f1(n,a=0,b=1):
+def f1(n,a=0,b=1):
       if n >0:
             print(a,end=" ")
             f1(n-1,b,a+b)
@@ -102,7 +102,7 @@ def f1(n,a=0,b=1):
             f1(n-1,b,a+b)
             print(a,end=" ")
 print()
-f1(8)'''
+f1(8)
 
 
 #when n is 5 find first 5 even numbers using recursion
@@ -136,3 +136,19 @@ def f1(n,a=1):
             print(a,end=" ")
             f1(n-1,a+2)
 f1(5)
+
+
+#this will always retun 1
+def fun(n):
+    if n<0:
+        return 1
+    return fun(n-1)
+print(fun(5)) #tracing the code will show that it will always return 1, because it will never reach the base case
+
+
+def fun(n):
+    if n<0:
+        print(1)
+    return fun(n-1)
+fun(5)##this will give error and print 1 infinite times till recursion limit is reached
+'''
