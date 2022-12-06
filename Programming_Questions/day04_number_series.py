@@ -88,6 +88,13 @@ for i in range(n):
             f1(n-1,b,a+b)
 f1(8)
 
+#or
+def f1(n,a=0,b=1):
+      print(a,end=" ")
+      if n >1:
+            f1(n-1,b,a+b)
+f1(8)
+
 
 #fibonocci series in reverse order using recursion
 def f1(n,a=0,b=1):
@@ -112,5 +119,4 @@ def f1(n,a=1):
             print(a,end=" ")
             f1(n-1,a+2)
 f1(5)
-
 
