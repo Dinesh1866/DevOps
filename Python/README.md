@@ -1007,6 +1007,34 @@ print(next(x))
 print(next(x))
 ```
 
+### types of functions
+
+#### 1. built-in functions
+
+### 2. user-defined functions
+
+### 3. anonymous functions
+
+### 4. recursive functions
+
+### 5. generator functions
+
+### miscllaneous functions
+
+> miscllaneous functions: It is a function that does not fit into any of the above categories. For example, the function `id()` is used to get the identity of an object.
+
+```python
+# miscllaneous functions
+a = 10
+print(id(a))
+
+
+def hello():
+    pass
+
+print(id(hello))
+```
+
 
 ## Classes
 

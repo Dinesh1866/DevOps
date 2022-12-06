@@ -81,3 +81,29 @@ for i in range(n):
       a,b = b,a+b'''
 
 
+# fibonocci series using recursion
+'''def fib(n):
+      if n<=1:
+            return n
+      else:
+            return fib(n-1)+fib(n-2)
+
+print(fib(8))'''
+'''n = int(input())
+fib(n)'''
+
+
+def f1(n,a=0,b=1):
+      if n >0:
+            print(a,end=" ")
+            f1(n-1,b,a+b)
+f1(8)
+
+
+#fibonocci series in reverse order
+def f1(n,a=0,b=1):
+      if n >0:
+            f1(n-1,b,a+b)
+            print(a,end=" ")
+print()
+f1(8)
