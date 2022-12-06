@@ -113,10 +113,26 @@ def f1(n,a=0):
 f1(5)
 
 
+#or
+def f1(n):
+      if n>0:
+            f1(n-1)
+            print(n*2,end=" ")
+f1(5)
+print()
+
+#in reverse order
+def f1(n):
+      if n>0:
+            print((n-1)*2,end=" ")
+            f1(n-1)
+f1(5)
+print()
+
+
 #when n is 5 find first 5 odd numbers using recursion
 def f1(n,a=1):
       if n >0:
             print(a,end=" ")
             f1(n-1,a+2)
 f1(5)
-
