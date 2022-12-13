@@ -152,3 +152,28 @@ def fun(n):
     return fun(n-1)
 fun(5)##this will give error and print 1 infinite times till recursion limit is reached
 '''
+
+
+#find the given number is prime or not
+#using for loop
+n = int(input())
+if n==1:
+      print("not prime")
+for i in range(2,n):
+      if n%i==0:
+            print("not prime")
+            break
+      else:
+            print("prime")
+            break
+
+
+#using recursion
+def f1(n,i=2):
+      if i<n:
+            if n%i==0:
+                  return "not prime"
+            else:
+                  f1(n,i+1)
+      else:
+            return "prime"
