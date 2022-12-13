@@ -151,7 +151,6 @@ def fun(n):
         print(1)
     return fun(n-1)
 fun(5)##this will give error and print 1 infinite times till recursion limit is reached
-'''
 
 
 #find the given number is prime or not
@@ -167,7 +166,6 @@ for i in range(2,n):
             print("prime")
             break
 
-
 #using recursion
 def f1(n,i=2):
       if i<n:
@@ -176,4 +174,4 @@ def f1(n,i=2):
             else:
                   f1(n,i+1)
       else:
-            return "prime"
+            return "prime" '''
