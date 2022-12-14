@@ -253,5 +253,6 @@ while len(l1) < n:
       else:
             l1.append(val)
       val+=1
-print(l1)
+print(*l1)#if we give without * it will print as list
+
 
