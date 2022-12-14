@@ -225,7 +225,7 @@ def f1(n,i=2):
             return f1(n,i+1)
       else:
             return "prime"
-print(f1(int(input())))'''
+print(f1(int(input())))
 
 
 #print first n prime numbers
@@ -259,7 +259,7 @@ print(*l1)#if we give without * it will print as list
 # find the factorial of a given number
 n = int(input())
 fact = 1
-for i in range(1,n+1):
+for i in range(1,n+1):#or with (n,1,-1)
       fact*=i
 print(fact)
 
@@ -269,4 +269,17 @@ def f1(n):
       if n==0:
             return 1
       return n*f1(n-1)
+print(f1(int(input())))'''
+
+def f1(n):
+      if n<2:
+            return 1
+      return n*f1(n-1)
+print(f1(int(input())))
+
+#or
+def f1(n,fact=1):
+      if n>1:
+            return f1(n-1,fact*n)
+      return fact
 print(f1(int(input())))

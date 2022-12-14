@@ -13,7 +13,6 @@ while count < 5:
 print()
 
 #print without 0
-
 n = int(input())
 count = 0
 val = 1
@@ -287,7 +286,7 @@ print(*l1)#if we give without * it will print as list
 ```python
 n = int(input())
 fact = 1
-for i in range(1,n+1):
+for i in range(1,n+1):#or with (n,1,-1)
       fact*=i
 print(fact)
 
@@ -297,6 +296,20 @@ def f1(n):
       if n==0:
             return 1
       return n*f1(n-1)
+print(f1(int(input())))
+
+#or
+def f1(n):
+      if n<2:
+            return 1
+      return n*f1(n-1)
+print(f1(int(input())))
+
+#or
+def f1(n,fact=1):
+      if n>1:
+            return f1(n-1,fact*n)
+      return fact
 print(f1(int(input())))
 ```
 
