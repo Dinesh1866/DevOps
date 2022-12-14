@@ -205,10 +205,24 @@ for i in range(2,n):
 
 #using recursion
 def f1(n,i=2):
+      if n<i:
+            return " not a prime"
       if i<n:
             if n%i==0:
                   return "not prime"
             else:
                   f1(n,i+1)
       else:
-            return "prime" '''
+            return "prime" 
+            
+#or
+def f1(n,i=2):
+      if n<i:
+            return " not a prime"
+      if i<n:
+            if n%i==0:
+                  return "not prime"
+            return f1(n,i+1)
+      else:
+            return "prime"
+print(f1(int(input())))'''
