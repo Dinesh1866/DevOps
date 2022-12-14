@@ -153,6 +153,44 @@ def fun(n):
 fun(5)##this will give error and print 1 infinite times till recursion limit is reached
 
 
+#find the number of odd and even numbers in a given number
+n = int(input())
+odd = 0
+even = 0
+while n>0:
+      rem = n%10
+      if rem%2==0:
+            even+=1
+      else:
+            odd+=1
+      n//=10
+print("odd:",odd,"even:",even)
+
+
+#find the max and min digit in a given number
+n = int(input())
+max = 0
+min = 9
+while n>0:
+      rem = n%10
+      if rem>max:
+            max = rem
+      if rem<min:
+            min = rem
+      n//=10
+print("max:",max,"min:",min)
+
+
+#print the given number in reverse order
+n = int(input())
+while n>0:
+      rem = n%10
+      print(rem,end="")
+      n//=10
+print()
+
+
+
 #find the given number is prime or not
 #using for loop
 n = int(input())
