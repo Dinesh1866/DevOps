@@ -226,3 +226,32 @@ def f1(n,i=2):
       else:
             return "prime"
 print(f1(int(input())))'''
+
+
+#print first n prime numbers
+n = int(input())
+count = 0
+val = 2
+while count < n:
+      for i in range(2,val):
+            if val%i==0:
+                  break
+      else:
+            print(val,end=" ")
+            count+=1
+      val+=1
+print()
+
+#or
+n = int(input())
+l1 = []
+val = 2
+while len(l1) < n:
+      for i in range(2,val):
+            if val%i==0:
+                  break
+      else:
+            l1.append(val)
+      val+=1
+print(l1)
+
