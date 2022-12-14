@@ -256,3 +256,17 @@ while len(l1) < n:
 print(*l1)#if we give without * it will print as list
 
 
+# find the factorial of a given number
+n = int(input())
+fact = 1
+for i in range(1,n+1):
+      fact*=i
+print(fact)
+
+
+#factorial using recursion
+def f1(n):
+      if n==0:
+            return 1
+      return n*f1(n-1)
+print(f1(int(input())))
