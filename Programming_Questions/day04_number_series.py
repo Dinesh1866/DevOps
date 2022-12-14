@@ -190,7 +190,6 @@ while n>0:
 print()
 
 
-
 #find the given number is prime or not
 #using for loop
 n = int(input())
