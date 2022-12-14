@@ -221,7 +221,8 @@ for i in range(n):
       print()
 ```
 
-#print * and @ wise versa
+>print * and @ wise versa
+```python
 '''eg: n=3
 * @ *
 @ * @
@@ -245,9 +246,10 @@ for i in range(1,n+1):
             print("*"if White==True else "@", end=" ")
             White = not White
       print()
+```
 
-
-#print values for every columns
+>print values for every columns
+```python
 '''eg: n=4
 1 2 3 4
 5 6 7 8
@@ -262,9 +264,11 @@ for i in range(n):
             if val >9:
                   val =1
       print()
+```
 
 
-#print values -> 1 to 99 as 01 to 09 everything 2 digits
+>print values -> 1 to 99 as 01 to 09 everything 2 digits
+```python
 '''eg:n =4
 01 02 03 04
 05 06 07 08
@@ -279,9 +283,10 @@ for i in range(n):
             if val >99:
                   val =1
       print()
+```
 
-
-#Print the following pattern
+>Print the following pattern
+```python
 '''
 * * * * *
 * C B A *
@@ -304,10 +309,11 @@ for i in range(n):
       val=a+1
       if val>ord("Z"):
             val= ord("A")
+```
 
 
-
-#by using functions fun(n)
+>by using functions fun(n) print the following pattern
+```python
 '''
 A B C D E
 B       F
@@ -331,10 +337,11 @@ def fun1(n):
 
 n = int(input())
 fun1(n)
+```
 
 
-
-#reverse of above
+>reverse of above
+```python
 '''
 E D C B A
 F       B
@@ -361,6 +368,7 @@ def fun1(n):
 
 n = int(input())
 fun1(n)
+```
 
 
 '''
