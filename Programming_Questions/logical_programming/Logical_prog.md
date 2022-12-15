@@ -1,7 +1,7 @@
 # LOGICAL PROGRAMMING
 
 ### baisc programs
->ODD or EVEN
+1. ODD or EVEN
 ```python
 num = int(input("enter a number: "))
 if num%2: print("odd") #here the values other than 0 is True so executes next block
@@ -38,7 +38,7 @@ num = int(input("enter a number: "))
 '''note 1 will be added in right shift for empty spaces '''
 ```
 
->print first n even numbers for given value of n
+2. print first n even numbers for given value of n
 ```python
 n = int(input())
 count = 0
@@ -61,14 +61,12 @@ while count < 5:
       val+=1
 print()
 
-
 #with for loop
 n = int(input())
 for i in range(1,n*2+1):
       if i%2==0:
             print(i,end=" ")
 print()
-
 
 #or just mul by 2
 n = int(input())
@@ -77,7 +75,7 @@ for i in range(n):
 print()
 ```
 
->print first n odd numbers
+3. print first n odd numbers
 ``` python
 n = int(input())
 for i in range(n):
@@ -85,7 +83,7 @@ for i in range(n):
 print()
 ```
 
->print one even number and one odd number
+4. print one even number and one odd number
 ```python
 n = int(input())
 val = 1
@@ -105,7 +103,7 @@ print()
 ```
 
 ### Fibonacci series
->add odd numbers to previous num eg: 2,5,10,17,26
+1. add odd numbers to previous num eg: 2,5,10,17,26
 ```python
 n = int(input())
 for i in range(1,n+1):
@@ -127,7 +125,7 @@ for i in range(n):
       print(a,end=" ")
       a,b = b,a+b
 ```
-> fibonocci series using recursion
+2. fibonocci series using recursion
 ```python
 def f1(n,a=0,b=1):
       if n >0:
@@ -143,7 +141,7 @@ def f1(n,a=0,b=1):
 f1(8)
 ```
 
-> fibonocci series in reverse order using recursion
+3. fibonocci series in reverse order using recursion
 ```python
 def f1(n,a=0,b=1):
       if n >0:
@@ -154,7 +152,7 @@ f1(8)
 ```
 
 
->when n is 5 find first 5 even numbers using recursion
+1. when n is 5 find first 5 even numbers using recursion
 ```python
 def f1(n,a=0):
       if n >0:
@@ -171,7 +169,7 @@ f1(5)
 print()
 ```
 
->in reverse order
+2. in reverse order
 ```python
 def f1(n):
       if n>0:
@@ -181,7 +179,7 @@ f1(5)
 print()
 ```
 
->when n is 5 find first 5 odd numbers using recursion
+3. when n is 5 find first 5 odd numbers using recursion
 ```python
 def f1(n,a=1):
       if n >0:
@@ -207,7 +205,7 @@ fun(5)##this will give error and print 1 infinite times till recursion limit is 
 ```
 
 
->find the number of odd and even numbers in a given number
+4. find the number of odd and even numbers in a given number
 ```python
 n = int(input())
 odd = 0
@@ -223,7 +221,7 @@ print("odd:",odd,"even:",even)
 ```
 
 
->find the max and min digit in a given number
+5. find the max and min digit in a given number
 ```python
 n = int(input())
 max = 0
@@ -239,7 +237,7 @@ print("max:",max,"min:",min)
 ```
 
 
->print the given number in reverse order
+6. print the given number in reverse order
 ```python
 n = int(input())
 while n>0:
@@ -250,7 +248,7 @@ print()
 ```
 
 
->find the given number is prime or not
+7. find the given number is prime or not
 ```python
 #using for loop
 n = int(input())
@@ -290,7 +288,7 @@ print(f1(int(input())))
 ```
 
 
->print first n prime numbers
+8. print first n prime numbers
 ```python
 n = int(input())
 count = 0
@@ -320,14 +318,13 @@ print(*l1)#if we give without * it will print as list
 ```
 
 
-> factorial of a given number
+9. factorial of a given number
 ```python
 n = int(input())
 fact = 1
 for i in range(1,n+1):#or with (n,1,-1)
       fact*=i
 print(fact)
-
 
 #factorial using recursion
 def f1(n):
